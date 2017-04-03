@@ -1,0 +1,63 @@
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License. You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#-----------------------------------------------------------------------
+#some test synonym mappings unlikely to appear in real input text
+aaafoo => aaabar
+bbbfoo => bbbfoo bbbbar
+cccfoo => cccbar cccbaz
+fooaaa,baraaa,bazaaa
+
+# Some synonym groups specific to this example
+GB,gib,gigabyte,gigabytes
+MB,mib,megabyte,megabytes
+Television, Televisions, TV, TVs
+#notice we use "gib" instead of "GiB" so any WordDelimiterFilter coming
+#after us won't split it into two words.
+
+# Synonym mappings can be used for spelling correction too
+pixima => pixma
+
+# Synonym for sport retrieval
+atl,hawks,atlanta
+bos,celtics,boston
+chicago,chi,bulls
+cleveland,cavaliers,cle
+dallas,mavericks,dal
+denver,nuggets,den
+detroit,pistons,det
+golden,state,warriors,gs
+houston,rockets,hou
+indiana,pacers,ind
+los,angeles,clippers,lac
+los,angeles,lakers,lal
+memphis,grizzlies,mem
+miami,heat,mia
+milwaukee,bucks,mil
+minnesota,timberwolves,min
+brooklyn,nets,nj,nets
+charlotte,hornets,cha
+new,orleans,pelicans,nop
+new,york,knicks,ny
+oklahoma,city,thunder,oct
+orlando,magic,orl
+philadelphia,76ers,phi
+phoenix,suns,phx
+portland,trail,blazers,por
+sacramento,kings,sac
+san,antonio,spurs,sa
+toronto,raptors,tor
+utah,jazz
+washington,wizards,wash
+
+# Others
+nba,national,basketball,association
