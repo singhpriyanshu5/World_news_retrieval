@@ -67,22 +67,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
   <div class="row" style="padding-top:50px;padding-bottom:50px">
     <div class="col-md-3">
-    <h2 style="font-size:110%">Filter by sentiment </h2>
-      <br>
-      <label>
-        <input type="radio" ng-model="sentiment" value="pos">
-        Positive
-      </label><br/>
-      <label>
-        <input type="radio" ng-model="sentiment" value="neutral">
-        Neutral
-      </label><br/>
-      <label>
-        <input type="radio" ng-model="sentiment" value="neg">
-        Negative
-      </label>
-      <br/>
-      <br/>
+
+      <div ng-show="showSentimentFilter" style="padding:30px 0 0 0">
+        <h1 style="font-size:110%">Filter by sentiment: </h1>
+        <div class="checkbox" ng-repeat="s in sentiments">
+          <label>
+            <input
+                type="checkbox"
+                value="{{s.name}}"
+                ng-checked="sentimentSelection.indexOf(s.name) > -1"
+                ng-click="toggleSentimentSelection(s.name)">
+            {{s.name}}
+          </label>
+          <div class="pull-right">{{s.count}}</div>
+        </div>
+      </div>
 
       <h2 style="font-size:110%">Filter by location </h2>
       <br>
@@ -129,8 +128,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <br>
         <br>
       </div> -->
-      <div ng-show="showSourceFilter" id="filter" style="padding:30px 0 0 0">
-        <h1 style="font-size:150%">Filter by author: </h1>
+      <div ng-show="showSourceFilter" style="padding:30px 0 0 0">
+        <h2 style="font-size:110%">Filter by author: </h2>
         <div class="checkbox" ng-repeat="s in sources">
           <label>
             <input
@@ -155,7 +154,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <!-- <div class="col-md-4 it">{{x.created_at}}</div> -->
           <!-- <div class="col-md-4"><a href="#" data-toggle="tooltip" ng-if="x.label !== undefined" title="{{x.label}}"><img ng-src="images/icon/{{x.label}}.jpeg" alt="Description" /></a></div> -->
         </div>
-        <p>{{x.text}}</p>
+        <p class="{{x.label}}">{{x.text}}</p>
         </div>
     </div>
   </div>

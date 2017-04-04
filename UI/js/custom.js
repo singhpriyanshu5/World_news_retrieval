@@ -8,7 +8,7 @@ var testLocally = true;
 
 app.controller('newsCtrl', function($scope, $http) {
   $scope.noResult = false;
-  $scope.comment = 'Popular searches: Google, Apple, Snapchat';
+  $scope.comment = 'Top searches: Google, Apple, Snapchat';
 
   $scope.suggest = function(suggestion) {
     $scope.keywords = suggestion;
@@ -59,11 +59,12 @@ app.controller('newsCtrl', function($scope, $http) {
   $scope.showDateFilter = false;
   $scope.showSourceFilter = false;
   $scope.enableMonthFilter = false;
+  $scope.showSentimentFilter = false;
 
   $scope.sourceSelection = [];
-  $scope.monthSelection = [];
+  $scope.sentimentSelection = [];
 
-  $scope.sentiment = "pos";
+  // $scope.sentiment = "pos";
   $scope.location = "w";
 
   $scope.toggleSourceSelection = function(source) {
@@ -78,14 +79,26 @@ app.controller('newsCtrl', function($scope, $http) {
     makeRequest(false);
   };
 
-  $scope.checkMonth = function(month) {
-    for (var i = 0;i < $scope.monthSelection.length;i++) {
-      if($scope.monthSelection[i].getTime() == month.getTime()) {
-        return true;
-      }
+  $scope.toggleSentimentSelection = function(sentiment) {
+
+    var idx = $scope.sentimentSelection.indexOf(sentiment);
+
+    if (idx > -1) {
+      $scope.sentimentSelection.splice(idx, 1);
+    }else {
+      $scope.sentimentSelection.push(sentiment);
     }
-    return false;
+    makeRequest(false);
   };
+
+  // $scope.checkMonth = function(month) {
+  //   for (var i = 0;i < $scope.monthSelection.length;i++) {
+  //     if($scope.monthSelection[i].getTime() == month.getTime()) {
+  //       return true;
+  //     }
+  //   }
+  //   return false;
+  // };
 
 
   // $scope.toggleMonthSelection = function(month) {
@@ -128,6 +141,15 @@ app.controller('newsCtrl', function($scope, $http) {
     return query;
   }
 
+  function makeSentimentQuery(sentiment) {
+    var query = '';
+
+    query += 'label:("';
+    query += encodeURIComponent(sentiment);
+    query += '")';
+    return query;
+  }
+
   function getlocation(){
       if($scope.location === "sg"){return '1.35,103.81';}
       else if($scope.location === "us"){return '34.05,-118.24';}
@@ -152,10 +174,11 @@ app.controller('newsCtrl', function($scope, $http) {
 
 
     var component = 'json.wrf=JSON_CALLBACK' +
-        '&q=' + 'label:'+$scope.sentiment+'%20AND%20'+encodeURIComponent(keywords) +
+        '&q=' + encodeURIComponent(keywords) +
         '&start=' + start +
         '&rows=' + pageSize +
-        '&facet.field=author';
+        '&facet.field=author'+
+        '&facet.field=label';
         // '&facet.date=creation_date' +
         // '&f.creation_date.facet.date.start=NOW-12MONTH/MONTH' +
         // '&f.creation_date.facet.date.end=NOW%2B1MONTH/MONTH' +
@@ -204,6 +227,14 @@ app.controller('newsCtrl', function($scope, $http) {
     // }
     dateQuery += ')';
 
+    var sentimentQuery = '(';
+    if($scope.sentimentSelection.length != 0){
+        sentimentQuery += makeSentimentQuery($scope.sentimentSelection[0]);
+        for(var i = 1;i<$scope.sentimentSelection.length;i++){
+            sentimentQuery+= ' OR ' + makeSentimentQuery($scope.sentimentSelection[i]);
+        }
+    }
+    sentimentQuery+=')';
 
     var sourceQuery = '(';
 
@@ -215,25 +246,38 @@ app.controller('newsCtrl', function($scope, $http) {
       }
     }
     sourceQuery += ')';
-    if($scope.sourceSelection.length != 0) {
-      component += '&fq=cat:(';
-      component += dateQuery;
-      component += ' AND ';
-      component += sourceQuery;
-      component += ')' ;
-    }else{
-      component += '&fq=cat:(';
-      component += dateQuery;
-      component += ')';
+    component += '&fq=cat:(';
+    component += dateQuery;
+    if($scope.sourceSelection.length!=0){
+        component += 'AND';
+        component += sourceQuery;
     }
+    if($scope.sentimentSelection.length!=0){
+        component += 'AND';
+        component += sentimentQuery;
+    }
+    component += ')';
+    // if($scope.sourceSelection.length != 0) {
+    //   component += '&fq=cat:(';
+    //   component += dateQuery;
+    //   component += ' AND ';
+    //   component += sourceQuery;
+    //   component += ')' ;
+    // }else{
+    //   component += '&fq=cat:(';
+    //   component += dateQuery;
+    //   component += ')';
+    // }
 
 
     var url = domain + component;
     console.log(url);
 
     $http.jsonp(url).success(function(data) {
-        console.log(JSON.stringify(data));
-        console.log("query data above");
+        updateFilterCheckboxes = true;
+        // console.log(JSON.stringify(data));
+        // console.log("query data above");
+
       $scope.currPage = currPage ;
       $scope.pageCount = Math.ceil(data.response.numFound / pageSize) ;
       if ($scope.pageCount > 1) {
@@ -290,13 +334,36 @@ app.controller('newsCtrl', function($scope, $http) {
         }
         $scope.showSourceFilter = true;
         $scope.sources = sources;
-        console.log($sources);
-        console.log('sources above');
 
-        $scope.sourceSelection = [];
-        for(var i = 0;i < $scope.sources.length;i++) {
-          $scope.sourceSelection.push($scope.sources[i].name);
+
+        // $scope.sourceSelection = [];
+        // for(var i = 0;i < $scope.sources.length;i++) {
+        //   $scope.sourceSelection.push($scope.sources[i].name);
+        // }
+
+        var sentiments = [];
+        var polarity;
+        var s_count = 0;
+        var sentiment = {};
+
+        for(i=0; i<data.facet_counts.facet_fields.label.length; i++){
+            if(i%2 == 0){
+                polarity = data.facet_counts.facet_fields.label[i];
+                sentiment.name = polarity;
+            }else{
+                count = data.facet_counts.facet_fields.label[i];
+                sentiment.count = count;
+                sentiments.push(sentiment);
+                sentiment = {};
+            }
         }
+        $scope.showSentimentFilter = true;
+        $scope.sentiments = sentiments;
+
+        // console.log($scope.sentiments);
+        // console.log('sentiments above');
+
+
         // $scope.monthSelection = [];
         // for(var i = 0;i < $scope.monthRecords.length;i++) {
         //   $scope.monthSelection.push($scope.monthRecords[i].month);
@@ -412,15 +479,15 @@ app.controller('newsCtrl', function($scope, $http) {
 
   };
 
-  $scope.crawl = function() {
-    // Here initialize a recrawling request to backend
-    // Upon finished, generate an alert window
-    var url = 'http://localhost:8000/incremental_crawler/recrawl?callback=JSON_CALLBACK';
-
-    $http.jsonp(url).success(function(data) {
-        console.log(JSON.stringify(data));
-        console.log('recrawling!!');
-      alert('The latest tweets have been crawled!!');
-    });
-  };
+  // $scope.crawl = function() {
+  //   // Here initialize a recrawling request to backend
+  //   // Upon finished, generate an alert window
+  //   var url = 'http://localhost:8000/incremental_crawler/recrawl?callback=JSON_CALLBACK';
+  //
+  //   $http.jsonp(url).success(function(data) {
+  //       console.log(JSON.stringify(data));
+  //       console.log('recrawling!!');
+  //     alert('The latest tweets have been crawled!!');
+  //   });
+  // };
 });
