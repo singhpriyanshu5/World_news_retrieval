@@ -1,5 +1,5 @@
 
-var app = angular.module('myApp', ['autocomplete']);
+var app = angular.module('myApp', ['autocomplete', 'angular-loading-bar']);
 var pageSize = 10;
 var currPage = 1;
 var keywords;
@@ -8,7 +8,7 @@ var testLocally = true;
 
 app.controller('newsCtrl', function($scope, $http) {
   $scope.noResult = false;
-  $scope.comment = 'Popular searches: Warriors, Curry for Three';
+  $scope.comment = 'Popular searches: Google, Apple, Snapchat';
 
   $scope.suggest = function(suggestion) {
     $scope.keywords = suggestion;
@@ -88,25 +88,25 @@ app.controller('newsCtrl', function($scope, $http) {
   };
 
 
-  $scope.toggleMonthSelection = function(month) {
-
-    var idx = -1;
-
-    for(var i = 0;i < $scope.monthSelection.length;i++) {
-      if($scope.monthSelection[i].getTime() == month.getTime()) {
-        idx = i;
-        break;
-      }
-    }
-
-    if (idx > -1) {
-      $scope.monthSelection.splice(idx, 1);
-    }else {
-      $scope.monthSelection.push(month);
-    }
-    makeRequest(false);
-
-  };
+  // $scope.toggleMonthSelection = function(month) {
+  //
+  //   var idx = -1;
+  //
+  //   for(var i = 0;i < $scope.monthSelection.length;i++) {
+  //     if($scope.monthSelection[i].getTime() == month.getTime()) {
+  //       idx = i;
+  //       break;
+  //     }
+  //   }
+  //
+  //   if (idx > -1) {
+  //     $scope.monthSelection.splice(idx, 1);
+  //   }else {
+  //     $scope.monthSelection.push(month);
+  //   }
+  //   makeRequest(false);
+  //
+  // };
 
   function makeMonthQuery(low,high) {
     var query = '';
@@ -155,36 +155,38 @@ app.controller('newsCtrl', function($scope, $http) {
         '&q=' + 'label:'+$scope.sentiment+'%20AND%20'+encodeURIComponent(keywords) +
         '&start=' + start +
         '&rows=' + pageSize +
-        '&facet.field=author' +
-        '&facet.date=creation_date' +
-        '&f.creation_date.facet.date.start=NOW-12MONTH/MONTH' +
-        '&f.creation_date.facet.date.end=NOW%2B1MONTH/MONTH' +
-        '&f.creation_date.facet.date.gap=%2B1MONTH'
-    ;
+        '&facet.field=author';
+        // '&facet.date=creation_date' +
+        // '&f.creation_date.facet.date.start=NOW-12MONTH/MONTH' +
+        // '&f.creation_date.facet.date.end=NOW%2B1MONTH/MONTH' +
+        // '&f.creation_date.facet.date.gap=%2B1MONTH'
+    // ;
     if(getlocation()){
         component += '&fq={!geofilt}&sfield=location&pt='+getlocation()+'&d=15'
     }
 
     var dateQuery = '(';
 
-    if($scope.enableMonthFilter) {
-      if($scope.monthSelection.length == 0) {
-        alert('Please at least check one month.');
-        return;
-      }
-      var low = $scope.monthSelection[0];
-      var high = new Date(low.getTime() + 2678400000);
+    // if($scope.enableMonthFilter) {
+    //   if($scope.monthSelection.length == 0) {
+    //     alert('Please at least check one month.');
+    //     return;
+    //   }
+    //   var low = $scope.monthSelection[0];
+    //   var high = new Date(low.getTime() + 2678400000);
+    //
+    //   dateQuery += makeMonthQuery(low,high);
+    //
+    //   for(var i = 1;i < $scope.monthSelection.length;i++) {
+    //     var low = $scope.monthSelection[i];
+    //     var high = new Date(low.getTime() + 2678400000);
+    //
+    //     dateQuery += ' OR ' + makeMonthQuery(low,high);
+    //   }
+    //
+    // }
+    // else{
 
-      dateQuery += makeMonthQuery(low,high);
-
-      for(var i = 1;i < $scope.monthSelection.length;i++) {
-        var low = $scope.monthSelection[i];
-        var high = new Date(low.getTime() + 2678400000);
-
-        dateQuery += ' OR ' + makeMonthQuery(low,high);
-      }
-
-    }else{
       var low = $scope.startDate;
 
       if (typeof low === 'undefined') {
@@ -199,7 +201,7 @@ app.controller('newsCtrl', function($scope, $http) {
       }
 
       dateQuery += makeMonthQuery(low,high);
-    }
+    // }
     dateQuery += ')';
 
 
@@ -227,8 +229,11 @@ app.controller('newsCtrl', function($scope, $http) {
 
 
     var url = domain + component;
+    console.log(url);
 
     $http.jsonp(url).success(function(data) {
+        console.log(JSON.stringify(data));
+        console.log("query data above");
       $scope.currPage = currPage ;
       $scope.pageCount = Math.ceil(data.response.numFound / pageSize) ;
       if ($scope.pageCount > 1) {
@@ -247,24 +252,24 @@ app.controller('newsCtrl', function($scope, $http) {
       $scope.comment = 'The query takes ' + queryTime + ' milliseconds. ';
 
       if(updateFaceting) {
-        var monthRecords = [];
-        var month;
-        var monthCount = 0;
-
-        for (var key in data.facet_counts.facet_dates.creation_date) {
-          if (monthCount == 12) {break;};
-          monthCount = monthCount + 1;
-          var date = new Date(key);
-
-          count = data.facet_counts.facet_dates.creation_date[key];
-          var monthRecord = {};
-
-          monthRecord.month = date;
-          monthRecord.count = count;
-          monthRecords.push(monthRecord);
-        }
-        $scope.showDateFilter = true;
-        $scope.monthRecords = monthRecords ;
+        // var monthRecords = [];
+        // var month;
+        // var monthCount = 0;
+        //
+        // for (var key in data.facet_counts.facet_dates.creation_date) {
+        //   if (monthCount == 12) {break;};
+        //   monthCount = monthCount + 1;
+        //   var date = new Date(key);
+        //
+        //   count = data.facet_counts.facet_dates.creation_date[key];
+        //   var monthRecord = {};
+        //
+        //   monthRecord.month = date;
+        //   monthRecord.count = count;
+        //   monthRecords.push(monthRecord);
+        // }
+        // $scope.showDateFilter = true;
+        // $scope.monthRecords = monthRecords ;
 
         var sources = [];
         var author;
@@ -285,15 +290,17 @@ app.controller('newsCtrl', function($scope, $http) {
         }
         $scope.showSourceFilter = true;
         $scope.sources = sources;
+        console.log($sources);
+        console.log('sources above');
 
         $scope.sourceSelection = [];
         for(var i = 0;i < $scope.sources.length;i++) {
           $scope.sourceSelection.push($scope.sources[i].name);
         }
-        $scope.monthSelection = [];
-        for(var i = 0;i < $scope.monthRecords.length;i++) {
-          $scope.monthSelection.push($scope.monthRecords[i].month);
-        }
+        // $scope.monthSelection = [];
+        // for(var i = 0;i < $scope.monthRecords.length;i++) {
+        //   $scope.monthSelection.push($scope.monthRecords[i].month);
+        // }
       }
     });
   }
@@ -408,10 +415,12 @@ app.controller('newsCtrl', function($scope, $http) {
   $scope.crawl = function() {
     // Here initialize a recrawling request to backend
     // Upon finished, generate an alert window
-    var url = 'http://localhost:8000/incremental_crawler/recrawl';
+    var url = 'http://localhost:8000/incremental_crawler/recrawl?callback=JSON_CALLBACK';
 
     $http.jsonp(url).success(function(data) {
-      alert('Recrawling in the background');
+        console.log(JSON.stringify(data));
+        console.log('recrawling!!');
+      alert('The latest tweets have been crawled!!');
     });
   };
 });

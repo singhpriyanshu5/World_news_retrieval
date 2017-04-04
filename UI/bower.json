@@ -21,6 +21,7 @@
     "jquery": "^2.2.1",
     "angular": "1.5.0",
     "highcharts": "^4.2.3",
-    "autocomplete": "https://github.com/JustGoscha/allmighty-autocomplete.git"
+    "autocomplete": "https://github.com/JustGoscha/allmighty-autocomplete.git",
+    "angular-loading-bar": "^0.9.0"
   }
 }

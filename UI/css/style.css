@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 /* start editing from here */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+html,body,div,span,applet,object,iframe,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0;padding:0;}
 blockquote,q{quotes:none;}
@@ -28,26 +28,26 @@ nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
-/*--login form start here--*/ 
+/*--login form start here--*/
 body {
-   background:url(../images/5.jpg)no-repeat;
-   background-size: cover;
+   /*background:url(../images/5.jpg)no-repeat;
+   background-size: cover;*/
    font-family: 'Open Sans', sans-serif;
    font-size: 100%;
-   color:white;
-   
+   color:black;
+
 }
 
 input[type=date] {
 	color:black;
 }
 
-.header{
+.header, h1{
 	text-align:center;
 	margin:0.4em 0 0 0;
-	font-size:48;
-	font-family:"Times New Roman",Georgia,Serif;
-	
+	font-size:18;
+	font-family:"Helvetica",Georgia,Serif;
+
 }
 
 .search {
@@ -74,9 +74,9 @@ input[type=date] {
 
 .news p{
 	padding:0em 0em 0em 0em;
-	font-size:2em;
-	color: #BEF781;
-	font-family: "Times New Roman", Georgia, Serif;
+	font-size:1.5em;
+	color: #000;
+	font-family: "Helvetica", Georgia, Serif;
 }
 
 .news .bold{
@@ -95,19 +95,20 @@ input[type=date] {
 .s-bar input[type="text"] {
   font-size: 1em;
   font-weight: 600;
-  color: #fff;
+  color: #000;
   padding: 1.3em 1em 1.3em 1.5em;
   width: 70%;
- text-shadow: rgba(80, 80, 80, 0.08) 1px 1px, 
-               rgba(80, 80, 80, 0.07) 2px 2px, 
-               rgba(80, 80, 80, 0.09) 3px 3px, 
-               rgba(80, 80, 80, 0.04) 4px 4px, 
-               rgba(80, 80, 80, 0.06) 5px 5px; 
+ /*text-shadow: rgba(80, 80, 80, 0.08) 1px 1px,
+               rgba(80, 80, 80, 0.07) 2px 2px,
+               rgba(80, 80, 80, 0.09) 3px 3px,
+               rgba(80, 80, 80, 0.04) 4px 4px,
+               rgba(80, 80, 80, 0.06) 5px 5px;*/
   border-radius: 5px 0px 0px 5px;
  -webkit-border-radius: 5px 0px 0px 5px;
   -moz-border-radius: 5px 0px 0px 5px;
   -o-border-radius: 5px 0px 0px 5px;
-  background: rgba(255, 255, 255, 0.5);
+  /*background: rgba(255, 255, 255, 0.5);*/
+  background: #EEE;
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -119,39 +120,33 @@ input[type=date] {
   padding: 1.3em 0.5em;
   width: 22%;
   text-align: center;
-  text-shadow: rgba(80, 80, 80, 0.08) 1px 1px, 
-               rgba(80, 80, 80, 0.07) 2px 2px, 
-               rgba(80, 80, 80, 0.09) 3px 3px, 
-               rgba(80, 80, 80, 0.04) 4px 4px, 
-               rgba(80, 80, 80, 0.06) 5px 5px;
   border-radius: 0px 5px 5px 0px;
   -webkit-border-radius:0px 5px 5px 0px;
   -moz-border-radius:0px 5px 5px 0px;
   -o-border-radius:0px 5px 5px 0px;
   margin: 0px 0px 0px -4px;
-  background:#7ac209;
+  background:#04cedf;
   cursor:pointer;
   border: none;
   outline: none;
   -webkit-appearance: none;
-  background: #7ac209;
-  background: -moz-linear-gradient(top, #7ac209 0%, #7ac209 37%, #7ac209 66%, #7ac209 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ac209), color-stop(37%,#7ac209), color-stop(66%,#7ac209), color-stop(100%,#7ac209));
-  background: -webkit-linear-gradient(top, #7ac209 0%,#7ac209 37%,#7ac209 66%,#7ac209 100%);
-  background: -o-linear-gradient(top, #7ac209 0%,#7ac209 37%,#7ac209 66%,#7ac209 100%);
-  background: -ms-linear-gradient(top, #7ac209 0%,#7ac209 37%,#7ac209 66%,#7ac209 100%);
-  background: linear-gradient(to bottom, #8EDB15 0%,#8EDB15 37%,#8EDB15 66%,#8EDB15 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac209', endColorstr='#7ac209',GradientType=0 );
+  /*background: -moz-linear-gradient(top, #02daec 0%, #02daec 37%, #02daec 66%, #02daec 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#02daec), color-stop(37%,#02daec), color-stop(66%,#02daec), color-stop(100%,#02daec));
+  background: -webkit-linear-gradient(top, #02daec 0%,#02daec 37%,#02daec 66%,#02daec 100%);
+  background: -o-linear-gradient(top, #02daec 0%,#02daec 37%,#02daec 66%,#02daec 100%);
+  background: -ms-linear-gradient(top, #02daec 0%,#02daec 37%,#02daec 66%,#02daec 100%);
+  background: linear-gradient(to bottom, #8EDB15 0%,#8EDB15 37%,#8EDB15 66%,#8EDB15 100%);*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02daec', endColorstr='#02daec',GradientType=0 );*/
 }
 .s-bar input[type="submit"]:hover{
 	opacity: 0.8;
-      filter: alpha(opacity=100); 
-      transition: all 0.3s ease; 
+      filter: alpha(opacity=100);
+      transition: all 0.3s ease;
      -webkit-transition: all 0.3s ease;
      -moz-transition: all 0.3s ease;
      -o-transition: all 0.3s ease;
 }
-.search i {
+/*.search i {
   background: url(../images/search.png)no-repeat;
   width: 31px;
   height: 31px;
@@ -160,7 +155,7 @@ input[type=date] {
   top: 20%;
   left: 32.2%;
   cursor: pointer;
-}
+}*/
 .search p {
   font-size: 0.9em;
   font-weight: 400;
@@ -254,7 +249,7 @@ input[type=date] {
 @media(max-width:667px){
 .search i {
   left: 18.5%;
-}	
+}
 }
 @media(max-width:640px){
 .s-bar {
@@ -262,22 +257,22 @@ input[type=date] {
 }
 .search i {
   left: 15.5%;
-}	
+}
 }
 @media(max-width:600px){
 .search i {
   left: 14.5%;
-}	
+}
 }
 @media(max-width:568px){
 .s-bar input[type="text"] {
   width: 64%;
-}	
+}
 }
 @media(max-width:480px){
 .s-bar input[type="text"] {
   width: 55%;
-  font-size: 0.8em;	
+  font-size: 0.8em;
 }
 .s-bar input[type="submit"] {
   width: 30%;
@@ -291,7 +286,7 @@ input[type=date] {
 .search i {
   top: 16%;
   left: 13.5%;
-}	
+}
 }
 @media(max-width:320px){
 .copyright {
@@ -317,11 +312,11 @@ input[type=date] {
   font-size: 0.72em;
 }
 .s-bar input[type="submit"] {
-  text-shadow: rgba(80, 80, 80, 0.08) 1px 1px, 
-               rgba(80, 80, 80, 0.07) 2px 2px, 
-               rgba(80, 80, 80, 0.09) 3px 3px, 
-               rgba(80, 80, 80, 0.04) 4px 4px, 
-               rgba(80, 80, 80, 0.06) 5px 5px;              
+  text-shadow: rgba(80, 80, 80, 0.08) 1px 1px,
+               rgba(80, 80, 80, 0.07) 2px 2px,
+               rgba(80, 80, 80, 0.09) 3px 3px,
+               rgba(80, 80, 80, 0.04) 4px 4px,
+               rgba(80, 80, 80, 0.06) 5px 5px;
 }
 }
 /*--meadia quiries end here--*/

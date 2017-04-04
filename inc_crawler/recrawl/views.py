@@ -36,32 +36,41 @@ def update_solr():
         print error
         raise
 
-def background_process():
+def background_process(handles_lst):
     # crawl data
     p = Pool(processes=5)
-    res = p.apply_async(crawl_incremental_data, args=('TechCrunch',))
-    res = p.apply_async(crawl_incremental_data, args=('mashabletech',))
-    res = p.apply_async(crawl_incremental_data, args=('WIRED',))
-    res = p.apply_async(crawl_incremental_data, args=('pogue',))
-    res = p.apply_async(crawl_incremental_data, args=('e27co',))
+    for handle in handles_lst:
+        res = p.apply_async(crawl_incremental_data, args=(handle,))
+    # res = p.apply_async(crawl_incremental_data, args=('TechCrunch',))
+    # res = p.apply_async(crawl_incremental_data, args=('mashabletech',))
+    # res = p.apply_async(crawl_incremental_data, args=('WIRED',))
+    # res = p.apply_async(crawl_incremental_data, args=('pogue',))
+    # res = p.apply_async(crawl_incremental_data, args=('e27co',))
     p.close()
     p.join()
-    print "Finish crawling"
+    print "Finished crawling"
 
     # classify data
     classify_main.classify_main()
-    print "Finish classifying"
+    print "Finished classifying"
 
     # update solr server
     update_solr()
-    print "Finish updating"
+    print "Finished updating"
 
 @csrf_exempt
 def recrawl(request):
-    print sys.path
-    t = threading.Thread(target=background_process)
-    # Want the program to wait on this thread before shutting down.
-    t.setDaemon(False)
-    t.start()
-
-    return HttpResponse()
+    handles_lst = []
+    if "handles" in request.GET:
+        print "got twitter handles"
+        print request.GET['handles']
+        handles_lst = (request.GET['handles']).split(',')
+    else:
+        handles_lst = ['TechCrunch', 'mashabletech', 'WIRED', 'pogue', 'e27co']
+    background_process(handles_lst)
+    if "callback" in request.GET:
+        response_json = "{'crawling_done':'true'}"
+        data = '%s(%s);' % (request.GET['callback'], response_json)
+        return HttpResponse(data, "text/javascript")
+    else:
+        return HttpResponse('okayy')

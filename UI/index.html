@@ -16,8 +16,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="bower_components/angular/angular.min.js"></script>
+  <link rel="stylesheet" href="bower_components/autocomplete/style/autocomplete.css"/>
+  <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css"/>
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-  <link rel="stylesheet" href="bower_components/autocomplete/style/autocomplete.css">
   <style>
     .autocomplete{
       width: 100%;
@@ -29,20 +30,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 </head>
 
-<body class="container" ng-app="myApp" ng-controller="newsCtrl">
+<body class="container-fluid" ng-app="myApp" ng-controller="newsCtrl">
 
   <!--search start here-->
   <ul class="nav nav-tabs">
     <li role="presentation" class="active"><a href="#">Search</a></li>
     <li role="presentation" ><a href="statistics.html">Statistics</a></li>
+    <li role="presentation" ><a href="crawl.html">Crawl </a></li>
 
-    <button type="button" ng-click="crawl()" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+    <!-- <button type="button" ng-click="crawl()" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
     Crawl
-    </button>
+    </button> -->
   </ul>
 
   <div class="header">
-    <h1>NBA News Retrieval</h1>
+    <h1>Tech News Retrieval</h1>
   </div>
 
   <div class="row search">
@@ -56,7 +58,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     {{comment}}
   </div>
 <div ng-show="hasSuggestions" class="row">
-  <h1> Do you mean: </h1>
+  <p> Do you mean: </p>
 </div>
 <div class="row">
 <ul style="list-style: none;"><li style="display: inline;padding-left:4em;font-style: italic;"  ng-repeat="x in suggestions"><a href ng-click="suggest(x)">{{x}}</a></li>
@@ -65,7 +67,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
   <div class="row" style="padding-top:50px;padding-bottom:50px">
     <div class="col-md-3">
-
+    <h2 style="font-size:110%">Filter by sentiment </h2>
       <br>
       <label>
         <input type="radio" ng-model="sentiment" value="pos">
@@ -80,7 +82,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         Negative
       </label>
       <br/>
+      <br/>
 
+      <h2 style="font-size:110%">Filter by location </h2>
       <br>
       <label>
         <input type="radio" ng-model="location" value="sg">
@@ -97,13 +101,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <br/>
 
       <div ng-show="!enableMonthFilter" style="padding:30px 0 30px 0">
-        <h1 style="font-size:150%"> Date Range Selection </h1>
+        <h2 style="font-size:110%"> Date Range Selection </h2>
+        <br>
         <p>From: </p>
         <input type="date" name="input" ng-model="startDate" placeholder="yyyy-MM-dd" />
         <p>To: </p>
         <input type="date" name="input" ng-model="endDate" placeholder="yyyy-MM-dd" />
       </div>
-      <div ng-show="showDateFilter" style="padding:30px 0 0 0">
+      <!-- <div ng-show="showDateFilter" style="padding:30px 0 0 0">
         <h1 style="font-size:150%"> Month Filter
         <div class="pull-right">
           <input type="checkbox" ng-model="enableMonthFilter">
@@ -123,9 +128,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </div>
         <br>
         <br>
-      </div>
+      </div> -->
       <div ng-show="showSourceFilter" id="filter" style="padding:30px 0 0 0">
-        <h1 style="font-size:150%">Source Filter: </h1>
+        <h1 style="font-size:150%">Filter by author: </h1>
         <div class="checkbox" ng-repeat="s in sources">
           <label>
             <input
@@ -147,8 +152,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="news" ng-repeat="x in news">
         <div class="row">
           <div class="col-md-4 bold">Source: {{x.author}}</div>
-          <div class="col-md-4 it">{{x.created_at}}</div>
-          <div class="col-md-4"><a href="#" data-toggle="tooltip" ng-if="x.label !== undefined" title="{{x.label}}"><img ng-src="images/icon/{{x.label}}.jpeg" alt="Description" /></a></div>
+          <!-- <div class="col-md-4 it">{{x.created_at}}</div> -->
+          <!-- <div class="col-md-4"><a href="#" data-toggle="tooltip" ng-if="x.label !== undefined" title="{{x.label}}"><img ng-src="images/icon/{{x.label}}.jpeg" alt="Description" /></a></div> -->
         </div>
         <p>{{x.text}}</p>
         </div>
@@ -179,6 +184,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="bower_components/autocomplete/script/autocomplete.js"></script>
+  <script type="text/javascript" src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
   <script src="js/custom.js"></script>
 </body>
 </html>
