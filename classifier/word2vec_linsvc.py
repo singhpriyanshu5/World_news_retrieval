@@ -40,7 +40,7 @@ def get_avg_feature_vector(sentences_list, w2v_model, num_features):
     return avg_vector_list
 
 def linearsvc_w2v_classify():
-    ogging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+    logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     labels_list = get_data("labels")
     tweets_list = get_data("tweets")
 
@@ -54,7 +54,7 @@ def linearsvc_w2v_classify():
               window = 2, sample = 1e-3, seed=1)
 
     ## @TODO: try to use the train_test_split provided by sklearn
-    index_value, train_set, test_set = train_test_split(0.80, sentences)
+    index_value, train_set, test_set = train_test_split(0.80, sentences_list)
 
     train_vector = get_avg_feature_vector(train_set, w2v_model, num_features)
     test_vector = get_avg_feature_vector(test_set, w2v_model, num_features)

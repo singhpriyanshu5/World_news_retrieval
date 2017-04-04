@@ -1,7 +1,7 @@
 import csv
 import os
 
-TWEET_LIMIT = 100
+TWEET_LIMIT = None
 
 def save_as_csv(file_path, data):
     with open(file_path, 'w') as f:

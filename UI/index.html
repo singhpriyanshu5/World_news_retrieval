@@ -1,0 +1,184 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>CZ4034 Assignment</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <!-- Custom Theme files -->
+
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="bower_components/angular/angular.min.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+  <link rel="stylesheet" href="bower_components/autocomplete/style/autocomplete.css">
+  <style>
+    .autocomplete{
+      width: 100%;
+      display:inline;
+      position: relative;
+    }
+  </style>
+  <!--Google Font-->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+</head>
+
+<body class="container" ng-app="myApp" ng-controller="newsCtrl">
+
+  <!--search start here-->
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Search</a></li>
+    <li role="presentation" ><a href="statistics.html">Statistics</a></li>
+
+    <button type="button" ng-click="crawl()" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+    Crawl
+    </button>
+  </ul>
+
+  <div class="header">
+    <h1>NBA News Retrieval</h1>
+  </div>
+
+  <div class="row search">
+    <i> </i>
+    <div class="s-bar">
+      <form>
+        <autocomplete ng-model="keywords" data="items" on-type="update" style="color:black;"></autocomplete>
+        <input type="submit" ng-click="search()" value="Search"/>
+      </form>
+    </div>
+    {{comment}}
+  </div>
+<div ng-show="hasSuggestions" class="row">
+  <h1> Do you mean: </h1>
+</div>
+<div class="row">
+<ul style="list-style: none;"><li style="display: inline;padding-left:4em;font-style: italic;"  ng-repeat="x in suggestions"><a href ng-click="suggest(x)">{{x}}</a></li>
+</ul>
+<hr>
+</div>
+  <div class="row" style="padding-top:50px;padding-bottom:50px">
+    <div class="col-md-3">
+
+      <br>
+      <label>
+        <input type="radio" ng-model="sentiment" value="pos">
+        Positive
+      </label><br/>
+      <label>
+        <input type="radio" ng-model="sentiment" value="neutral">
+        Neutral
+      </label><br/>
+      <label>
+        <input type="radio" ng-model="sentiment" value="neg">
+        Negative
+      </label>
+      <br/>
+
+      <br>
+      <label>
+        <input type="radio" ng-model="location" value="sg">
+        Singapore
+      </label><br/>
+      <label>
+        <input type="radio" ng-model="location" value="us">
+        United States
+      </label><br/>
+      <label>
+        <input type="radio" ng-model="location" value="w">
+        Worldwide
+      </label>
+      <br/>
+
+      <div ng-show="!enableMonthFilter" style="padding:30px 0 30px 0">
+        <h1 style="font-size:150%"> Date Range Selection </h1>
+        <p>From: </p>
+        <input type="date" name="input" ng-model="startDate" placeholder="yyyy-MM-dd" />
+        <p>To: </p>
+        <input type="date" name="input" ng-model="endDate" placeholder="yyyy-MM-dd" />
+      </div>
+      <div ng-show="showDateFilter" style="padding:30px 0 0 0">
+        <h1 style="font-size:150%"> Month Filter
+        <div class="pull-right">
+          <input type="checkbox" ng-model="enableMonthFilter">
+        </div>
+      </h1>
+      <div class="checkbox" ng-repeat="m in monthRecords">
+        <label>
+          <input
+              type="checkbox"
+              value="{{m.month}}"
+              ng-disabled="!enableMonthFilter"
+              ng-checked="checkMonth(m.month)"
+              ng-click="toggleMonthSelection(m.month)">
+          {{(m.month.getMonth()+1) + '/' + m.month.getFullYear()}}
+        </label>
+        <div class="pull-right">{{m.count}}</div>
+      </div>
+        <br>
+        <br>
+      </div>
+      <div ng-show="showSourceFilter" id="filter" style="padding:30px 0 0 0">
+        <h1 style="font-size:150%">Source Filter: </h1>
+        <div class="checkbox" ng-repeat="s in sources">
+          <label>
+            <input
+                type="checkbox"
+                value="{{s.name}}"
+                ng-checked="sourceSelection.indexOf(s.name) > -1"
+                ng-click="toggleSourceSelection(s.name)">
+            {{s.name}}
+          </label>
+          <div class="pull-right">{{s.count}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <h1 style="font-style: italic;" ng-show="noResult">
+        Sorry, cannot find any tweets about '{{keywords}}'.
+      </h1>
+      <div class="news" ng-repeat="x in news">
+        <div class="row">
+          <div class="col-md-4 bold">Source: {{x.author}}</div>
+          <div class="col-md-4 it">{{x.created_at}}</div>
+          <div class="col-md-4"><a href="#" data-toggle="tooltip" ng-if="x.label !== undefined" title="{{x.label}}"><img ng-src="images/icon/{{x.label}}.jpeg" alt="Description" /></a></div>
+        </div>
+        <p>{{x.text}}</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+  <div class="row" >
+    <div class="col-xs-1">
+      <button type="button" class="btn btn-default" ng-click="pre()" ng-disabled="preDisabled">Previous</button>
+    </div>
+    <div class="col-xs-2 col-xs-offset-4">
+      <h1 style="font-size:150%;">Page {{currPage}} of {{pageCount}}</h1>
+    </div>
+    <div class="col-xs-1 col-xs-offset-4">
+      <button type="button" class="btn btn-default" ng-click="next()" ng-disabled="nextDisabled">Next</button>
+    </div>
+  </div>
+  <!--search end here-->
+<hr>
+<div>
+  <div class="copyright">
+    <p>CZ4034 Information Retrieval Team</p>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="bower_components/autocomplete/script/autocomplete.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>

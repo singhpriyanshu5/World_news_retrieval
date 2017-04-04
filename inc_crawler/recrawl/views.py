@@ -1,13 +1,20 @@
+from __future__ import absolute_import
+import sys
+import os
+from inc_crawler import settings
+sys.path.append(os.path.abspath(settings.FILES_DIR))
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from multiprocessing import Pool
-import classify_main
+from classifier import classify_main
 import json
-import tech_crawler
+from crawler import tech_crawler
 import socket
 import threading
 import urllib2
-import os
+
+
+
 
 def crawl_incremental_data(twitter_handle):
     print "crawling incremental data from "+twitter_handle
@@ -51,6 +58,7 @@ def background_process():
 
 @csrf_exempt
 def recrawl(request):
+    print sys.path
     t = threading.Thread(target=background_process)
     # Want the program to wait on this thread before shutting down.
     t.setDaemon(False)

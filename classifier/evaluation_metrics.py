@@ -85,7 +85,7 @@ def plot_precision_recall_curve_all_classes(average_precision,
   plt.xlabel('Recall')
   plt.ylabel('Precision')
   plt.title('Extension of Precision-Recall curve to multi-class')
-  plt.legend(loc="top left")
+  plt.legend(loc="upper left")
   plt.savefig('figure/' + file_name + '/precision_recall_curve_all.png')
   if show_plot:
     plt.show()
@@ -99,7 +99,7 @@ def plot_precision_recall_curve(average_precision, precision, recall, file_name,
   plt.ylim([0.0, 1.05])
   plt.xlim([0.0, 1.0])
   plt.title('Precision-Recall example: AUC={0:0.2f}'.format(average_precision[0]))
-  plt.legend(loc="top left")
+  plt.legend(loc="upper left")
   plt.savefig('figure/' + file_name + '/precision_recall_curve.png')
   if show_plot:
     plt.show()
