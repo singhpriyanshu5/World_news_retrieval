@@ -1,6 +1,6 @@
 import csv
 import os
-from utility import TWEET_LIMIT
+from utility import TWEET_LIMIT, handles_lst
 
 def get_data(data_type):
     if data_type == "labels":
@@ -9,7 +9,7 @@ def get_data(data_type):
             labels_list = list(reader)[0]
             return labels_list
     elif data_type == "tweets":
-        with open('tweets_data/preprocessed_tweets.csv', 'r') as labels_file:
+        with open('tweets_data/'+handles_lst[0]+'_sentiments_preprocessed.csv', 'r') as labels_file:
             reader = csv.reader(labels_file)
             tweets_list = list(reader)[0]
             if TWEET_LIMIT != None:

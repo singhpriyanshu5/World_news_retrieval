@@ -1,6 +1,9 @@
 import json
 import urllib
-from utility import TWEET_LIMIT
+from utility import TWEET_LIMIT, handles_lst
+API_KEY = '03a678d69796e8a821619eaa38714674ksB7JbwOKhU-5XWofHGa1edqg4AnDzrV'
+
+
 
 def sentiment_api(tweets_file, max_tweets):
     print 'Getting the sentiment value for ', tweets_file
@@ -16,10 +19,14 @@ def sentiment_api(tweets_file, max_tweets):
             break
 
         text = tweet['text'].encode('ascii', 'ignore')
-        data = urllib.urlencode({'text': text})
-        result = urllib.urlopen('http://text-processing.com/api/sentiment/', data)
+        data= urllib.urlencode({'text':text, 'api-key':API_KEY})
+
+        result = urllib.urlopen('https://api.sentigem.com/external/get-sentiment?', data)
+        # result = urllib.urlopen('https://api.sentigem.com/external/get-sentiment?api-key=03a678d69796e8a821619eaa38714674ksB7JbwOKhU-5XWofHGa1edqg4AnDzrV&text=awesome')
+        # result = urllib.urlopen('https://api.sentigem.com/external/get-sentiment?api-key=03a678d69796e8a821619eaa38714674ksB7JbwOKhU-5XWofHGa1edqg4AnDzrV&text='+text)
         json_data = json.loads(result.read())
-        tweet['label'] = json_data['label']
+        tweet['label'] = json_data['polarity']
+
 
     with open('tweets_data/' + tweets_file + '_sentiments.json', 'w') as tweets_sentiments_file:
         if max_tweets != None:
@@ -29,4 +36,4 @@ def sentiment_api(tweets_file, max_tweets):
 
 
 if __name__ == '__main__':
-    sentiment_api('TechCrunch', TWEET_LIMIT)
+    sentiment_api(handles_lst[0], TWEET_LIMIT)

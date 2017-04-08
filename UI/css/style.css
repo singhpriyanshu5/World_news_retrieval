@@ -319,7 +319,7 @@ input[type=date] {
                rgba(80, 80, 80, 0.06) 5px 5px;
 }
 }
-.news .pos{color:green;}
-.news .neg{color:red;}
+.news .positive{color:green;}
+.news .negative{color:red;}
 .news .neutral{color:black;}
 /*--meadia quiries end here--*/

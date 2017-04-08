@@ -48,10 +48,10 @@ def linearsvc_w2v_classify():
     for tweet in tweets_list:
         sentences_list.append(tweet.split())
 
-    num_features = 100
+    num_features = 250
     w2v_model = Word2Vec(sentences_list, workers = 4, \
-              size = num_features, min_count = 1, \
-              window = 2, sample = 1e-3, seed=1)
+              size = num_features, min_count = 4, \
+              window = 3, sample = 1e-3, seed=1)
 
     ## @TODO: try to use the train_test_split provided by sklearn
     index_value, train_set, test_set = train_test_split(0.80, sentences_list)
@@ -68,6 +68,7 @@ def linearsvc_w2v_classify():
 
     create_directory('data')
     prediction.tofile("data/linearsvc_w2v.csv", sep=',')
+    save_as_csv("data/linearsvc_w2v_test_labels.csv", labels_list[index_value:])
 
     create_directory('model')
     joblib.dump(model, 'model/%s.pkl' % 'linearsvc_w2v')

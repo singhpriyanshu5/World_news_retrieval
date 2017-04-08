@@ -1,8 +1,8 @@
 from sklearn.externals import joblib
 import json
+from utility import handles_lst
 
-filenames = ['TechCrunch', 'mashabletech', 'pogue', 'e27co', 'WIRED']
-ALL_DATA_FILE_PATH = 'data/classified_tweets.json'
+filenames = handles_lst
 
 def classify_main():
     model = joblib.load('model/linearsvc_tfidf.pkl')
@@ -11,9 +11,9 @@ def classify_main():
     all_tweets_json = []
     all_tweets_text = []
     for filename in filenames:
-        with open('tweets_data/'+filename+'_data.json') as json_file:
+        with open('tweets_data/'+filename+'_data_preprocessed.json') as json_file:
             tweets_json = json.load(json_file)
-            tweets_text = [tweet['text'] for tweet in tweets_json]
+            tweets_text = [tweet['ptext'] for tweet in tweets_json]
             all_tweets_json.extend(tweets_json)
             all_tweets_text.extend(tweets_text)
 

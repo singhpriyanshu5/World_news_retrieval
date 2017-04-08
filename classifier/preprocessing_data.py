@@ -3,12 +3,11 @@ from nltk.corpus import stopwords
 from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
-from utility import save_as_csv
+from utility import save_as_csv, handles_lst
 import json
 import nltk
 import re
 import string
-
 lemmatizer = WordNetLemmatizer()
 
 
@@ -41,72 +40,83 @@ def process_apostrophe(word, pos_tag):
     return word
 
 
-def preprocess(tweets_file):
+def preprocess(handles):
     # open file
-    tweet_text_lst = []
-    with open('tweets_data/' + tweets_file + '_data.json') as json_file:
-        tweets = json.load(json_file)
-    # load the text of the tweet to a list
-    for index, tweet in enumerate(tweets):
-        text = tweet['text'].encode('ascii', 'ignore')
-        tweet_text_lst.append(text)
+    sentiment_handle = handles[0]
+    handles.insert(0,sentiment_handle+'_sentiments')
+    for handle_index,handle in enumerate(handles):
 
-    # preprocess
-    stop_words = stopwords.words('english')
+        tweet_text_lst = []
+        filename = handle if handle_index == 0 else handle+'_data'
+        with open('tweets_data/' + filename + '.json') as json_file:
+            tweets = json.load(json_file)
+        # load the text of the tweet to a list
+        for index, tweet in enumerate(tweets):
+            text = tweet['text'].encode('ascii', 'ignore')
+            tweet_text_lst.append(text)
 
-    # convert to lower case
-    processed_data = [sentence.lower() for sentence in tweet_text_lst]
+        # preprocess
+        stop_words = stopwords.words('english')
 
-    # remove html
-    processed_data = [BeautifulSoup(sentence, "html.parser").get_text() for sentence in processed_data]
+        # convert to lower case
+        processed_data = [sentence.lower() for sentence in tweet_text_lst]
 
-    # split sentence to words
-    processed_data = [sentence.split() for sentence in processed_data]
+        # remove html
+        processed_data = [BeautifulSoup(sentence, "html.parser").get_text() for sentence in processed_data]
 
-    tweets_list = []
-    for sentence in processed_data:
-        # Remove links
-        sentence = [word for word in sentence if not re.match("^http\S+", word)]
+        # split sentence to words
+        processed_data = [sentence.split() for sentence in processed_data]
 
-        # Remove mention
-        sentence = [word for word in sentence if not re.match("\S*@\S+", word)]
+        tweets_list = []
+        for sentence in processed_data:
+            # Remove links
+            sentence = [word for word in sentence if not re.match("^http\S+", word)]
 
-        # Remove hashtag
-        sentence = [word for word in sentence if not re.match("\S*#\S+", word)]
+            # Remove mention
+            sentence = [word for word in sentence if not re.match("\S*@\S+", word)]
 
-        tweet_text = " ".join(sentence)
-        tweets_list.append(tweet_text)
+            # Remove hashtag
+            sentence = [word for word in sentence if not re.match("\S*#\S+", word)]
 
-    for i in xrange(len(tweets_list)):
-        tweet = tweets_list[i]
-        tokens = word_tokenize(tweet)
+            tweet_text = " ".join(sentence)
+            tweets_list.append(tweet_text)
 
-        preprocessed_word_lst = []
-        for (word,pos_tag) in nltk.pos_tag(tokens):
-            word = process_apostrophe(word, pos_tag)
+        for i in xrange(len(tweets_list)):
+            tweet = tweets_list[i]
+            tokens = word_tokenize(tweet)
 
-            if word in stop_words:
-                continue
-            elif pos_tag != None and pos_tag in [".", "TO", "IN", "DT", "UH", "WDT", "WP", "WP$", "WRB"]:
-                continue
+            preprocessed_word_lst = []
+            for (word,pos_tag) in nltk.pos_tag(tokens):
+                word = process_apostrophe(word, pos_tag)
 
-            pos_code = get_pos_code(pos_tag)
+                if word in stop_words:
+                    continue
+                elif pos_tag != None and pos_tag in [".", "TO", "IN", "DT", "UH", "WDT", "WP", "WP$", "WRB"]:
+                    continue
 
-            if pos_code != '':
-                word = lemmatizer.lemmatize(word, pos_code)
-                preprocessed_word_lst.append(word)
+                pos_code = get_pos_code(pos_tag)
 
-        preprocessed_tweet = " ".join(preprocessed_word_lst)
+                if pos_code != '':
+                    word = lemmatizer.lemmatize(word, pos_code)
+                    preprocessed_word_lst.append(word)
 
-        preprocessed_tweet = preprocessed_tweet.encode('utf-8').translate(None, string.punctuation)
+            preprocessed_tweet = " ".join(preprocessed_word_lst)
 
-        tweets_list[i] = preprocessed_tweet
+            preprocessed_tweet = preprocessed_tweet.encode('utf-8').translate(None, string.punctuation)
 
-    save_as_csv('tweets_data/preprocessed_tweets.csv', tweets_list)
+            tweets_list[i] = preprocessed_tweet
+            tweets[i]['ptext'] = preprocessed_tweet
+
+
+        if handle_index == 0:
+            save_as_csv('tweets_data/'+filename+'_preprocessed.csv', tweets_list)
+        else:
+            with open('tweets_data/' + filename + '_preprocessed.json', 'w') as tf:
+                json.dump(tweets, tf)
 
     # store a list of the labels in a csv file
     label_list = []
-    with open('tweets_data/' + tweets_file + '_sentiments.json') as json_file:
+    with open('tweets_data/' + handles_lst[0] + '.json') as json_file:
         tweets = json.load(json_file)
         for tweet in tweets:
             label_list.append(tweet['label'])
@@ -114,4 +124,4 @@ def preprocess(tweets_file):
 
 
 if __name__ == '__main__':
-  preprocess('TechCrunch')
+  preprocess(handles_lst)

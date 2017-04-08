@@ -2,6 +2,7 @@ import csv
 import os
 
 TWEET_LIMIT = None
+handles_lst = ['cnnbrk','BBCWorld', 'FoxNews', 'timesofindia', 'STcom']
 
 def save_as_csv(file_path, data):
     with open(file_path, 'w') as f:

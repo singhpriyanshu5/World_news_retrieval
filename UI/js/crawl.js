@@ -1,10 +1,10 @@
 var app = angular.module('crawlApp', ['angular-loading-bar']);
 app.controller('crawlCtrl', function($scope, $http) {
-    $scope.handles = [{"text":'TechCrunch', "display":"TechCrunch"},
-                        {"text":'mashabletech', "display":"Mashable Tech"},
-                        {"text":'WIRED', "display":"WIRED"},
-                        {"text":'e27co', "display":"e27 Asia Tech News"},
-                        {"text":'pogue', "display":"David Pogue"}];
+    $scope.handles = [{"text":'BBCWorld', "display":"BBC News (World)"},
+                        {"text":'cnnbrk', "display":"CNN Breaking News"},
+                        {"text":'FoxNews', "display":"Fox news"},
+                        {"text":'STcom', "display":"The Straits Times"},
+                        {"text":'timesofindia', "display":"Times of India"}];
     $scope.selected = {}
     $scope.crawlSelected=function(){
         console.log($scope.selected);

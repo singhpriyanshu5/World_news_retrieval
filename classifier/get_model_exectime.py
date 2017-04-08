@@ -1,6 +1,8 @@
-from utility import create_directory
+import timeit
 from get_data import get_data
-import timit
+from utility import create_directory
+
+
 
 ## calculate the average time for classifying the entire dataset
 def get_dataset_time(total_time, num_reps):
@@ -15,14 +17,8 @@ def calculate_exectime():
     num_tweets = len(tweets_list)
 
     ## setup statement for the linear svc classifier
-    linsvc_setup = """
-      from get_data import get_data;
-      from sklearn.externals import joblib;
-      tweets_list = get_data("tweets");
-      vectorizer = joblib.load('model/vectorizer_tfidf.pkl');
-      vectorized_tweets = vectorizer.transform(tweets_list);
-      linear_svc_model = joblib.load('model/linearsvc_tfidf.pkl');
-      linear_svc_model.predict(vectorized_tweets);
+
+    linsvc_setup ="""from get_data import get_data;from sklearn.externals import joblib;tweets_list = get_data("tweets");vectorizer = joblib.load('model/vectorizer_tfidf.pkl');vectorized_tweets = vectorizer.transform(tweets_list);linear_svc_model = joblib.load('model/linearsvc_tfidf.pkl');linear_svc_model.predict(vectorized_tweets);
       """
     linsvc_statement = "linear_svc_model.predict(vectorized_tweets)"
     num_reps = 100
@@ -31,17 +27,7 @@ def calculate_exectime():
     linsvc_dataset_time = get_dataset_time(linsvc_time, num_reps)
     linsvc_datapoint_time = get_datapoint_time(linsvc_dataset_time, num_tweets)
 
-    rf_setup = """
-      import cPickle;
-      from get_data import get_data;
-      from sklearn.externals import joblib;
-
-      tweets_list = get_data("tweets");
-      vectorizer = joblib.load('model/vectorizer_tfidf.pkl');
-      vectorized_tweets = vectorizer.transform(tweets_list);
-      with open('model/random_forest_tfidf.pickle', 'rb') as f:
-          rf_model = cPickle.load(f);
-      rf_model.predict(vectorized_tweets);
+    rf_setup = """import cPickle;from get_data import get_data;from sklearn.externals import joblib;tweets_list = get_data("tweets");vectorizer = joblib.load('model/vectorizer_tfidf.pkl');vectorized_tweets = vectorizer.transform(tweets_list); rf_model = joblib.load('model/rf_tfidf.pkl');rf_model.predict(vectorized_tweets);
       """
     rf_statement = "rf_model.predict(vectorized_tweets)"
 

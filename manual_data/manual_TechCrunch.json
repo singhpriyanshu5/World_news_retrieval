@@ -1,0 +1,2081 @@
+[
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "CheckRecipient, a London startup that uses machine learning to stop misaddressed emails, raises $2.7M https://t.co/nc9kPFfPTH by @sohear",
+        "creation_date": "2017-04-04T23:00:41Z",
+        "location": "34.0522,-118.2437",
+        "id": 849396333425381376,
+        "label":"pos",
+        "fav_count": 7
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Apple has a new iMac and Pro display in the works, too https://t.co/6FU0eqWYG9",
+        "creation_date": "2017-04-04T22:52:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 849394162369781762,
+        "label":"neutral",
+        "fav_count": 26
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Instacart VP of operations Mike Swartz has left the company https://t.co/vfRnqOB0Gf by @mattlynley",
+        "creation_date": "2017-04-04T22:25:43Z",
+        "location": "34.0522,-118.2437",
+        "id": 849387531879763968,
+        "label":"neg",
+        "fav_count": 9
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Project Zero uncovers a nasty Wi-Fi chip exploit https://t.co/ow2XfuzJan by @kateconger",
+        "creation_date": "2017-04-04T21:51:44Z",
+        "location": "34.0522,-118.2437",
+        "id": 849378980096614400,
+        "label":"neg",
+        "fav_count": 26
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "After an unexpected reveal, AOL's CEO explains that Oath is about B2B branding https://t.co/oRDjWXrVGo by @bheater",
+        "creation_date": "2017-04-04T21:39:16Z",
+        "location": "34.0522,-118.2437",
+        "id": 849375844707467269,
+        "label":"neg",
+        "fav_count": 18
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Tusk Ventures quietly held a first close on $25 million for its debut fund https://t.co/xKo5YZ8bla by @cookie",
+        "creation_date": "2017-04-04T21:38:39Z",
+        "location": "34.0522,-118.2437",
+        "id": 849375688872382464,
+        "label":"neutral",
+        "fav_count": 14
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Oscar Health’s Mario Schlosser is coming to Disrupt NY 2017 https://t.co/1eiarNIrph #TCDisrupt https://t.co/8lNDlDk0a9",
+        "creation_date": "2017-04-04T21:23:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 849371770457133060,
+        "label":"neg",
+        "fav_count": 13
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "The existing Mac Pro gets a spec bump as Apple goes back to the drawing board https://t.co/DHRqBnIpJT https://t.co/OHESFHiQCB",
+        "creation_date": "2017-04-04T20:53:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 849364219350986752,
+        "label":"pos",
+        "fav_count": 51
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Tim Berners-Lee, inventor of the world wide web, wins ‘computing’s Nobel Prize’ https://t.co/CCZvpAjH1R https://t.co/G8QfLOlId9",
+        "creation_date": "2017-04-04T20:29:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 849358180731817984,
+        "label":"pos",
+        "fav_count": 139
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Fae is a new open-source content management system based on Rails https://t.co/SwSvExnt9E by @fredericl",
+        "creation_date": "2017-04-04T20:16:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 849354906393882624,
+        "label":"neutral",
+        "fav_count": 25
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "High school junior launches TagDat, an emoji-based local reviews app https://t.co/TdsgAEwM5Q by @tayhatmaker",
+        "creation_date": "2017-04-04T20:11:39Z",
+        "location": "34.0522,-118.2437",
+        "id": 849353793632440322,
+        "label":"neutral",
+        "fav_count": 45
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Graphene used to sieve salts from seawater https://t.co/2FjoYwreXv https://t.co/wLg8BFfpuE",
+        "creation_date": "2017-04-04T20:05:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 849352138891419648,
+        "label":"neutral",
+        "fav_count": 50
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "The Life of Pablo is the first album to go platinum from streaming only https://t.co/2oqvEEUVQs by @fitztepper https://t.co/sE7N5qLIsr",
+        "creation_date": "2017-04-04T19:59:33Z",
+        "location": "34.0522,-118.2437",
+        "id": 849350747875573760,
+        "label":"pos",
+        "fav_count": 79
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Apple Music on Android catches up with iOS, but bugs remain https://t.co/5XX07BI8EZ by @sarahintampa",
+        "creation_date": "2017-04-04T19:49:55Z",
+        "location": "34.0522,-118.2437",
+        "id": 849348324280893441,
+        "label":"neg",
+        "fav_count": 27
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "RT @ericabasnicki: Brililantly written article by @panzer for @TechCrunch:  Apple pushes the reset button on the Mac Pro https://t.co/Miyzd…",
+        "creation_date": "2017-04-04T19:46:09Z",
+        "location": "34.0522,-118.2437",
+        "id": 849347378289274885,
+        "label":"neutral",
+        "fav_count": 0
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Find-a-doctor app Amino raises $25 million https://t.co/KR0foJWgTW",
+        "creation_date": "2017-04-04T19:41:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 849346094660280322,
+        "label":"neutral",
+        "fav_count": 47
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Aurora's massive LightningStrike VTOL UAV just got one step closer to reality https://t.co/kzXElI9daH by… https://t.co/QUllQQUknL",
+        "creation_date": "2017-04-04T19:25:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 849342071685206017,
+        "label":"pos",
+        "fav_count": 19
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Daimler and Bosch: fully autonomous cars within 5 years https://t.co/oojRV2yelQ",
+        "creation_date": "2017-04-04T19:05:02Z",
+        "location": "34.0522,-118.2437",
+        "id": 849337030828056582,
+        "label":"neutral",
+        "fav_count": 61
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "How Winnipeg focused on local strengths to create a tech hub in central Canada https://t.co/q1DBP2rFXe by @benfischberg",
+        "creation_date": "2017-04-04T19:00:39Z",
+        "location": "34.0522,-118.2437",
+        "id": 849335926161641473,
+        "label":"pos",
+        "fav_count": 27
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "LocusBots can now 'talk' to each other and collaborate in warehouses https://t.co/FywBpIQwP8 by @lorakolodny",
+        "creation_date": "2017-04-04T18:57:25Z",
+        "location": "34.0522,-118.2437",
+        "id": 849335112412143616,
+        "label":"neutral",
+        "fav_count": 50
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Salesforce has spent about $6 million to fix its gender and racial pay gap https://t.co/kPZ9Oqbajd https://t.co/Y4GMfjbH5W",
+        "creation_date": "2017-04-04T18:37:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 849330001593987073,
+        "label":"pos",
+        "fav_count": 67
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Marshall's Monitor Bluetooth headphones are crisp but uncomfortable https://t.co/3s4hz1xHWS by @stefanetienne",
+        "creation_date": "2017-04-04T18:35:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 849329495282774017,
+        "label":"neg",
+        "fav_count": 12
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Shopify’s Burst is a new free stock photography resource https://t.co/aIAfNf7yzB https://t.co/pxl7KsebY5",
+        "creation_date": "2017-04-04T18:07:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 849322451398004736,
+        "label":"neutral",
+        "fav_count": 60
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "The TC Disrupt After Parties (and concert!) are going to be off the hook! https://t.co/IFyHrEchKY by @jordanrcrook  #TCDisrupt",
+        "creation_date": "2017-04-04T17:45:20Z",
+        "location": "34.0522,-118.2437",
+        "id": 849316973108502528,
+        "label":"pos",
+        "fav_count": 22
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "TC is taking over Manhattan on Thursday! https://t.co/bni4iSxewi by @jordanrcrook",
+        "creation_date": "2017-04-04T17:42:25Z",
+        "location": "34.0522,-118.2437",
+        "id": 849316236857159681,
+        "label":"neutral",
+        "fav_count": 17
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "The spinout is designed to give McAfee more independence to pursue “pure-play” cybersecurity https://t.co/0NLjDzg1vz",
+        "creation_date": "2017-04-04T17:39:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 849315396670943232,
+        "label":"neutral",
+        "fav_count": 15
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Feedly’s reader app now caters to knowledge workers with launch of boards, notes &amp; annotations https://t.co/0LoHOOJ8XA by @sarahintampa",
+        "creation_date": "2017-04-04T17:37:22Z",
+        "location": "34.0522,-118.2437",
+        "id": 849314966545027073,
+        "label":"neutral",
+        "fav_count": 28
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "This new sentiment index aims to help founders time their fundraising https://t.co/cijcSwjfuk by @cookie",
+        "creation_date": "2017-04-04T17:15:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 849309351777095682,
+        "label":"pos",
+        "fav_count": 22
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "The Sonos Playbase is a home theater in a slab https://t.co/YH8Xq4vgX5 https://t.co/lv82Gtfgh2",
+        "creation_date": "2017-04-04T17:14:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 849309111120482304,
+        "label":"neutral",
+        "fav_count": 36
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Grokstyle is putting computer vision to work on home decor with $2M in funding https://t.co/gaoQJlOBKs",
+        "creation_date": "2017-04-04T17:05:58Z",
+        "location": "34.0522,-118.2437",
+        "id": 849307067785543686,
+        "label":"neutral",
+        "fav_count": 24
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "The $4.1 billion Cloudera question https://t.co/UXaR1RsugD",
+        "creation_date": "2017-04-04T16:45:12Z",
+        "location": "34.0522,-118.2437",
+        "id": 849301839212359680,
+        "label":"neutral",
+        "fav_count": 28
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Spotify trades free tier album delays for smaller royalties https://t.co/Uso4aKSHR6 by @joshconstine",
+        "creation_date": "2017-04-04T16:42:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 849301063639457792,
+        "label":"neg",
+        "fav_count": 28
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Pluto AI raises $2.1 million to bring intelligence to water treatment https://t.co/WbIhCVGppL by @JohnMannes",
+        "creation_date": "2017-04-04T16:34:38Z",
+        "location": "34.0522,-118.2437",
+        "id": 849299181428756483,
+        "label":"neutral",
+        "fav_count": 46
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "WhatsApp may be about to introduce peer-to-peer payments in its largest market https://t.co/E1zIctPyZu",
+        "creation_date": "2017-04-04T16:26:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 849297022561779712,
+        "label":"neutral",
+        "fav_count": 68
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Real-time video streaming service PhenixP2P raises $3.5M https://t.co/j8EkcCGKNL by @fredericl",
+        "creation_date": "2017-04-04T16:15:13Z",
+        "location": "34.0522,-118.2437",
+        "id": 849294293609177092,
+        "label":"neutral",
+        "fav_count": 25
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Clearmob uses AI to optimize your social marketing campaigns https://t.co/WTl5zDgeFQ by @ryanlawler",
+        "creation_date": "2017-04-04T16:00:31Z",
+        "location": "34.0522,-118.2437",
+        "id": 849290593410928640,
+        "label":"pos",
+        "fav_count": 32
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Tech will lead to new sub-prime crunch https://t.co/0KX444fMaZ",
+        "creation_date": "2017-04-04T15:57:20Z",
+        "location": "34.0522,-118.2437",
+        "id": 849289793481482240,
+        "label":"neg",
+        "fav_count": 15
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Tesla now worth more than GM, making it the most valuable U․S․ automaker https://t.co/Klcy7IgmrF by @etherington https://t.co/epYZY9LX2e",
+        "creation_date": "2017-04-04T15:54:44Z",
+        "location": "34.0522,-118.2437",
+        "id": 849289138192867332,
+        "label":"pos",
+        "fav_count": 165
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Pros and cons of “Oath: A Verizon Company” https://t.co/jNXN2nMEkR #TakeTheOath https://t.co/XCHNftjsoE",
+        "creation_date": "2017-04-04T15:54:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 849288983087652864,
+        "label":"neutral",
+        "fav_count": 26
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "At-home sperm health selfies are on the rise https://t.co/VJOUruPyM9 https://t.co/Gahc0V84w3",
+        "creation_date": "2017-04-04T15:43:47Z",
+        "location": "34.0522,-118.2437",
+        "id": 849286384326250497,
+        "label":"neutral",
+        "fav_count": 38
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "RT @titoyooo: After coming on @TechCrunch Crunch Report everyone thinks @Redfoo is me. #abetterlookingme #fundaymonday ❤️ https://t.co/yxqL…",
+        "creation_date": "2017-04-04T15:40:40Z",
+        "location": "34.0522,-118.2437",
+        "id": 849285601169887232,
+        "label":"neutral",
+        "fav_count": 0
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "In tech, the wage gender gap worsens for women over time, and it's worst for black women https://t.co/1aroF19Clv by @cookie",
+        "creation_date": "2017-04-04T15:26:49Z",
+        "location": "34.0522,-118.2437",
+        "id": 849282114067480577,
+        "label":"neg",
+        "fav_count": 40
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Netflix teases Marvel's The Defenders, arriving August 18 https://t.co/bvN2wsaq1q by @etherington https://t.co/sH33WbP8R8",
+        "creation_date": "2017-04-04T15:25:58Z",
+        "location": "34.0522,-118.2437",
+        "id": 849281901785305088,
+        "label":"neutral",
+        "fav_count": 67
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Microsoft launches Sprinkles, a silly camera app powered by machine learning https://t.co/Csfz6XCgzy by @sarahintampa",
+        "creation_date": "2017-04-04T15:23:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 849281183011790850,
+        "label":"neutral",
+        "fav_count": 47
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "ODG unveils new AR smart glasses optimized for 'hazardous locations' https://t.co/qFuQZJxndM by @lucas_matney",
+        "creation_date": "2017-04-04T15:02:31Z",
+        "location": "34.0522,-118.2437",
+        "id": 849275998034051072,
+        "label":"pos",
+        "fav_count": 28
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "SureFlap has an app-controlled pet door in the pipeline https://t.co/IwGwqyrlt5 by @riptari",
+        "creation_date": "2017-04-04T14:55:27Z",
+        "location": "34.0522,-118.2437",
+        "id": 849274220613914624,
+        "label":"neutral",
+        "fav_count": 21
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Apple has a new iMac and Pro display in the works, too https://t.co/LRgYxSimWM by @bheater",
+        "creation_date": "2017-04-04T14:49:55Z",
+        "location": "34.0522,-118.2437",
+        "id": 849272826674765824,
+        "label":"neutral",
+        "fav_count": 49
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Vimcar, a Berlin startup that offers hardware and an app to manage company fleets, raises $5.5M https://t.co/DNDaF4EmLa by @sohear",
+        "creation_date": "2017-04-04T14:48:34Z",
+        "location": "34.0522,-118.2437",
+        "id": 849272486273462274,
+        "label":"neutral",
+        "fav_count": 39
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Yelp acquires Wi-Fi marketing company Turnstyle Analytics for $20 million https://t.co/dhjerES9FQ by @sarahintampa",
+        "creation_date": "2017-04-04T14:07:24Z",
+        "location": "34.0522,-118.2437",
+        "id": 849262128192262144,
+        "label":"neutral",
+        "fav_count": 50
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Infiniti launches a startup lab in Toronto to focus on IoT and smart cities https://t.co/vqNJgunBq2 by @etherington https://t.co/0wvDnuYChj",
+        "creation_date": "2017-04-04T14:01:02Z",
+        "location": "34.0522,-118.2437",
+        "id": 849260527733886977,
+        "label":"pos",
+        "fav_count": 47
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Cohesity raises $90M+ Series C round for its hyperconverged data platform https://t.co/pLMa7XTEMS by @fredericl",
+        "creation_date": "2017-04-04T14:01:01Z",
+        "location": "34.0522,-118.2437",
+        "id": 849260520976912384,
+        "label":"neutral",
+        "fav_count": 25
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Oscar Health's Mario Schlosser is coming to Disrupt NY 2017 https://t.co/pdbog8Ql0h by @sarahbuhr",
+        "creation_date": "2017-04-04T13:50:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 849257778464075776,
+        "label":"neutral",
+        "fav_count": 16
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "The existing Mac Pro gets a spec bump as Apple goes back to the drawing board https://t.co/IANsn3XARw by @bheater",
+        "creation_date": "2017-04-04T13:42:24Z",
+        "location": "34.0522,-118.2437",
+        "id": 849255835788353537,
+        "label":"pos",
+        "fav_count": 45
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Resolute Ventures seals up its third fund with $65 million from investors https://t.co/0BrRjih2I9 by @cookie",
+        "creation_date": "2017-04-04T13:32:14Z",
+        "location": "34.0522,-118.2437",
+        "id": 849253279443722240,
+        "label":"neutral",
+        "fav_count": 24
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Bizzabo gets $6.5M Series A to make organizing events easier https://t.co/cjEwtGyJCM by @catherineshu",
+        "creation_date": "2017-04-04T13:00:48Z",
+        "location": "34.0522,-118.2437",
+        "id": 849245367354916864,
+        "label":"pos",
+        "fav_count": 17
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Tim Berners-Lee, inventor of the world wide web, wins 'computing's Nobel Prize' https://t.co/flxdSVAG7D by @jonrussell",
+        "creation_date": "2017-04-04T12:58:34Z",
+        "location": "34.0522,-118.2437",
+        "id": 849244804265291776,
+        "label":"pos",
+        "fav_count": 142
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "RT @panzer: I spoke to @pschiller, Craig Federighi &amp; John Ternus of Apple about the future of the Mac Pro, new pro iMacs &amp; more https://t.c…",
+        "creation_date": "2017-04-04T12:51:21Z",
+        "location": "34.0522,-118.2437",
+        "id": 849242988081332225,
+        "label":"neutral",
+        "fav_count": 0
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": ".@Redfoo from @LMFO joins @titoyooo on today's #Crunch Report https://t.co/c63N7nmTbd",
+        "creation_date": "2017-04-04T12:45:13Z",
+        "location": "34.0522,-118.2437",
+        "id": 849241445114404864,
+        "label":"neutral",
+        "fav_count": 25
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Apple pushes the reset button on the Mac Pro https://t.co/tZ3Tlg8b9D by @panzer",
+        "creation_date": "2017-04-04T12:04:08Z",
+        "location": "34.0522,-118.2437",
+        "id": 849231106888974340,
+        "label":"neg",
+        "fav_count": 56
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Glassdoor has a guide to figure out if there's a wage gap at your company https://t.co/MS9XBxI7EW by @meganrosedickey",
+        "creation_date": "2017-04-04T12:00:56Z",
+        "location": "34.0522,-118.2437",
+        "id": 849230299980599297,
+        "label":"neutral",
+        "fav_count": 32
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Money transfer startup Azimo now lets you send money to a phone number https://t.co/Yg3ztPrtul by @sohear",
+        "creation_date": "2017-04-04T12:00:15Z",
+        "location": "34.0522,-118.2437",
+        "id": 849230128337096704,
+        "label":"neutral",
+        "fav_count": 69
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Graphene used to sieve salts from seawater https://t.co/uyQ2c5TLsY by @riptari",
+        "creation_date": "2017-04-04T10:59:55Z",
+        "location": "34.0522,-118.2437",
+        "id": 849214945078235139,
+        "label":"neutral",
+        "fav_count": 49
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Can Dubai achieve a happiness revolution without addressing its labor issues? https://t.co/3gtz0bBBpM",
+        "creation_date": "2017-04-04T10:43:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 849210703009517568,
+        "label":"neutral",
+        "fav_count": 30
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Amino raises $25 million to match patients with doctors best qualified to ... https://t.co/CYjYzfuhUA by… https://t.co/Ni3ubcliY5",
+        "creation_date": "2017-04-04T10:00:13Z",
+        "location": "34.0522,-118.2437",
+        "id": 849199920506707971,
+        "label":"pos",
+        "fav_count": 31
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "A look back on the golden age of Atari gaming https://t.co/0jzexnobj6 https://t.co/k6KPl93gAJ",
+        "creation_date": "2017-04-04T09:42:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 849195366713102337,
+        "label":"pos",
+        "fav_count": 108
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Tesla is worth more than Ford, @Redfoo is in the house, and more on #CrunchReport with @titoyooo https://t.co/eUb8Gad8uu",
+        "creation_date": "2017-04-04T09:30:09Z",
+        "location": "34.0522,-118.2437",
+        "id": 849192356226023426,
+        "label":"neutral",
+        "fav_count": 48
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Daimler and Bosch: fully autonomous cars within 5 years https://t.co/zG2nt41U09 by @kristenhg",
+        "creation_date": "2017-04-04T09:11:36Z",
+        "location": "34.0522,-118.2437",
+        "id": 849187689194815488,
+        "label":"neutral",
+        "fav_count": 70
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Salesforce has spent about $6 million to fix its gender and racial pay gap https://t.co/tMIY5v1FAT by @meganrosedickey",
+        "creation_date": "2017-04-04T09:00:32Z",
+        "location": "34.0522,-118.2437",
+        "id": 849184903816241152,
+        "label":"pos",
+        "fav_count": 67
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Trump signs resolution nullifying privacy requirements for internet providers https://t.co/KmbgBbIwgx https://t.co/BXdb1sUoJo",
+        "creation_date": "2017-04-04T07:31:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 849162399240392704,
+        "label":"neutral",
+        "fav_count": 41
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Data Collective and SynBioBeta founder John Cumbers launch a seed stage biotech fund https://t.co/oUBnZ9rd60 by @sarahbuhr",
+        "creation_date": "2017-04-04T07:01:54Z",
+        "location": "34.0522,-118.2437",
+        "id": 849155048819097600,
+        "label":"neutral",
+        "fav_count": 41
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Adobe partners with Google to launch new open-source pan-CJK font https://t.co/LUE3yY17Jd",
+        "creation_date": "2017-04-04T06:59:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 849154340065562624,
+        "label":"neutral",
+        "fav_count": 62
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Kevin Rose is going back to Cali — and joining True Ventures as venture partner https://t.co/cXLzwIBueR https://t.co/TlxjXEsDqy",
+        "creation_date": "2017-04-04T06:32:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 849147553539137538,
+        "label":"neutral",
+        "fav_count": 61
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Tesla is worth more than Ford, @Redfoo is in the house, and more on #CrunchReport with @titoyooo https://t.co/57smynbUSw",
+        "creation_date": "2017-04-04T06:08:19Z",
+        "location": "34.0522,-118.2437",
+        "id": 849141562030170113,
+        "label":"neutral",
+        "fav_count": 87
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Author Ryan Holiday talks about the value of stoicism in a high-tech world https://t.co/LVF0aa2M3i https://t.co/eIilrYmPTX",
+        "creation_date": "2017-04-04T06:05:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 849140755381800960,
+        "label":"neg",
+        "fav_count": 53
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "WhatsApp will reportedly launch peer-to-peer payments in India within 6 months https://t.co/5lOaG1qHBI by @jonrussell",
+        "creation_date": "2017-04-04T05:35:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 849133189926797312,
+        "label":"neutral",
+        "fav_count": 108
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Google’s Project Loon head is getting into nuclear power https://t.co/zZDr7FLKuj",
+        "creation_date": "2017-04-04T05:33:02Z",
+        "location": "34.0522,-118.2437",
+        "id": 849132682743336960,
+        "label":"neutral",
+        "fav_count": 41
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Shopify's Burst is a new free stock photography resource https://t.co/fZ7RxWQt5Z by @etherington https://t.co/j1vQhcZfYi",
+        "creation_date": "2017-04-04T04:42:08Z",
+        "location": "34.0522,-118.2437",
+        "id": 849119873250635776,
+        "label":"neutral",
+        "fav_count": 108
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Apple Fellow Rich Page on ‘stealing jobs’ and Chowbotics’ salad-making robots https://t.co/3mL3IMSyAv https://t.co/u4wjcjG1hc",
+        "creation_date": "2017-04-04T04:35:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 849118100494712832,
+        "label":"neg",
+        "fav_count": 31
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Intel Security is McAfee again https://t.co/wZk2VczRQ7 by @kateconger",
+        "creation_date": "2017-04-04T04:22:36Z",
+        "location": "34.0522,-118.2437",
+        "id": 849114958533087233,
+        "label":"neutral",
+        "fav_count": 46
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Crunch Report | Tesla Now Valued More Than Ford https://t.co/0EVeebmPD5 by @titoyooo",
+        "creation_date": "2017-04-04T04:16:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 849113311144816641,
+        "label":"pos",
+        "fav_count": 86
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "The Sonos Playbase is a home theater in a slab https://t.co/g3BvSTq6KY by @johnbiggs",
+        "creation_date": "2017-04-04T04:01:54Z",
+        "location": "34.0522,-118.2437",
+        "id": 849109747664138240,
+        "label":"neutral",
+        "fav_count": 41
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Yahoo + AOL = Oath, for some reason https://t.co/nDasDkbVD9 https://t.co/dLMY7nsRsZ",
+        "creation_date": "2017-04-04T04:00:14Z",
+        "location": "34.0522,-118.2437",
+        "id": 849109329689104384,
+        "label":"neutral",
+        "fav_count": 58
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "RT @kateconger: some new stuff to add to your #waymuber timelines: Lior Ron is the other Otto/ex-Googler under arbitration https://t.co/L27…",
+        "creation_date": "2017-04-04T03:50:02Z",
+        "location": "34.0522,-118.2437",
+        "id": 849106762938580992,
+        "label":"neutral",
+        "fav_count": 0
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Boeing and ULA demo their Emergency Egress System for crewed space launches https://t.co/V0XwdPNpQK https://t.co/czP8HMOfBL",
+        "creation_date": "2017-04-04T03:30:56Z",
+        "location": "34.0522,-118.2437",
+        "id": 849101958006751233,
+        "label":"neutral",
+        "fav_count": 33
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "What to expect at TC Sessions: Justice, our diversity and inclusion in tech event https://t.co/i0SBa08i3p… https://t.co/c0Tc3otZs7",
+        "creation_date": "2017-04-04T03:23:01Z",
+        "location": "34.0522,-118.2437",
+        "id": 849099963330068480,
+        "label":"neutral",
+        "fav_count": 28
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Netflix brings offline viewing to Windows 10 PCs and tablets https://t.co/AVi6U5gqly",
+        "creation_date": "2017-04-04T02:11:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 849081866510643207,
+        "label":"neutral",
+        "fav_count": 89
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Blackstorm Labs and Rakuten launch R Games to build high-fidelity HTML5 games https://t.co/QtltLR3HPb by @mattlynley",
+        "creation_date": "2017-04-04T02:00:20Z",
+        "location": "34.0522,-118.2437",
+        "id": 849079154331054080,
+        "label":"pos",
+        "fav_count": 29
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Updated with the FCC commissioners’ individual statements  https://t.co/eyyaBRH4Yq",
+        "creation_date": "2017-04-04T01:52:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 849077080893652994,
+        "label":"neutral",
+        "fav_count": 29
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Google launches new certification program for mobile site developers https://t.co/T9Bl3t82qf",
+        "creation_date": "2017-04-04T01:50:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 849076567506595840,
+        "label":"neutral",
+        "fav_count": 157
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Ford on 🔝 of list of automated driving leaders in new study https://t.co/eoBxTeU4d1 https://t.co/Rxe1baH8Gx",
+        "creation_date": "2017-04-04T01:26:10Z",
+        "location": "34.0522,-118.2437",
+        "id": 849070555332575232,
+        "label":"neutral",
+        "fav_count": 57
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Cloudera's IPO will test unicorn valuations https://t.co/csrvM2Jzim by @alex",
+        "creation_date": "2017-04-04T01:07:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 849065762367184896,
+        "label":"neutral",
+        "fav_count": 30
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Pros and cons of \"Oath: A Verizon Company\" https://t.co/9tXTaPwdVX",
+        "creation_date": "2017-04-04T01:01:21Z",
+        "location": "34.0522,-118.2437",
+        "id": 849064313679736832,
+        "label":"neutral",
+        "fav_count": 17
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "According to the stock market, Tesla is trading ⬆️ and Ford is trading ⬇️ https://t.co/uJNGSxgYDV https://t.co/MBOcfpUVpq",
+        "creation_date": "2017-04-04T00:19:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 849053672554336257,
+        "label":"neutral",
+        "fav_count": 59
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Equity Podcast: This week we discussed the massive Dropbox debt facility, the rough situation at Munchery, and more https://t.co/hgfn4rEVhD",
+        "creation_date": "2017-04-04T00:11:37Z",
+        "location": "34.0522,-118.2437",
+        "id": 849051797570240512,
+        "label":"neg",
+        "fav_count": 12
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Trump signs resolution removing privacy requirements for internet providers https://t.co/PSS488OIGm",
+        "creation_date": "2017-04-04T00:04:09Z",
+        "location": "34.0522,-118.2437",
+        "id": 849049919012851712,
+        "label":"neutral",
+        "fav_count": 34
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Amazon launches Amazon Cash, a way to shop its site without a bank card https://t.co/wCtir5JYvR https://t.co/cxB73H8Y5x",
+        "creation_date": "2017-04-03T23:55:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 849047642776756225,
+        "label":"neutral",
+        "fav_count": 87
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Boeing and ULA demo their Emergency Egress System for crewed space launches https://t.co/V9de79gnik https://t.co/mpsiaJYz2H",
+        "creation_date": "2017-04-03T23:29:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 849041096437059584,
+        "label":"neutral",
+        "fav_count": 33
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Adobe partners with Google to launch new open-source pan-CJK font https://t.co/olx6C6OIfi by @fredericl https://t.co/Ivh1hg7O9f",
+        "creation_date": "2017-04-03T23:00:11Z",
+        "location": "34.0522,-118.2437",
+        "id": 849033818027819010,
+        "label":"neutral",
+        "fav_count": 70
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Product Hunt adds feature to make your product hunting easier https://t.co/58GGqaAV3n",
+        "creation_date": "2017-04-03T22:46:01Z",
+        "location": "34.0522,-118.2437",
+        "id": 849030256015147008,
+        "label":"pos",
+        "fav_count": 34
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "HTC launching its VR app subscription service at $7 per month https://t.co/3pL3SmewLG https://t.co/aIEqQGTubr",
+        "creation_date": "2017-04-03T22:22:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 849024233611067397,
+        "label":"neutral",
+        "fav_count": 64
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Chowbotics’ salad-making robots can make hundreds of salad recipes https://t.co/35zAruZZXS https://t.co/XAbNXa7B4Y",
+        "creation_date": "2017-04-03T22:18:00Z",
+        "location": "34.0522,-118.2437",
+        "id": 849023204123222016,
+        "label":"neutral",
+        "fav_count": 150
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Apple Fellow Rich Page on 'stealing jobs' and Chowbotics' salad-making robots https://t.co/ahKsMixxxB by… https://t.co/IZKpRxS4HY",
+        "creation_date": "2017-04-03T22:04:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 849019708514811904,
+        "label":"neg",
+        "fav_count": 12
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Facebook encourages text statuses with new colored backgrounds https://t.co/P5CdRIJFCt https://t.co/Edr7PC9hOM",
+        "creation_date": "2017-04-03T21:54:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 849017188946202624,
+        "label":"neutral",
+        "fav_count": 37
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Yahoo + AOL = Oath, for some reason https://t.co/nXG8a0fo8M by @bheater",
+        "creation_date": "2017-04-03T21:40:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 849013666968199168,
+        "label":"neutral",
+        "fav_count": 70
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "FCC Chairman Pai pushes for broadband access over competition https://t.co/erANINZj2v",
+        "creation_date": "2017-04-03T21:21:16Z",
+        "location": "34.0522,-118.2437",
+        "id": 849008924720115712,
+        "label":"neutral",
+        "fav_count": 24
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Google’s Project Loon head is getting into nuclear power https://t.co/hKPSZkySfq by @bheater",
+        "creation_date": "2017-04-03T20:50:58Z",
+        "location": "34.0522,-118.2437",
+        "id": 849001300050051072,
+        "label":"neutral",
+        "fav_count": 34
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Google claims Levandowski launched competing projects long before Otto https://t.co/ts5uWPR7zt by @kateconger",
+        "creation_date": "2017-04-03T20:37:32Z",
+        "location": "34.0522,-118.2437",
+        "id": 848997919122374656,
+        "label":"neutral",
+        "fav_count": 36
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Roboteam is building a 10,000-strong robot army for your home https://t.co/KwTS2V4NTz by @jshieber",
+        "creation_date": "2017-04-03T20:27:13Z",
+        "location": "34.0522,-118.2437",
+        "id": 848995322953031680,
+        "label":"neutral",
+        "fav_count": 44
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Google bets on AI in Canada with Google Brain Toronto and Vector Institute... https://t.co/7jOPIkCR3b by… https://t.co/1eE1n7fdCU",
+        "creation_date": "2017-04-03T20:22:00Z",
+        "location": "34.0522,-118.2437",
+        "id": 848994010270015488,
+        "label":"neutral",
+        "fav_count": 63
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Kevin Rose is going back to Cali -- and joining True Ventures as venture partner https://t.co/YnNXRyyMsp by @cookie",
+        "creation_date": "2017-04-03T20:05:11Z",
+        "location": "34.0522,-118.2437",
+        "id": 848989778741612549,
+        "label":"neutral",
+        "fav_count": 30
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Author Ryan Holiday talks about the value of stoicism in a high-tech world https://t.co/YaLB3GOi8V by @johnbiggs",
+        "creation_date": "2017-04-03T19:04:36Z",
+        "location": "34.0522,-118.2437",
+        "id": 848974530928414720,
+        "label":"neg",
+        "fav_count": 33
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Iyzico, a Turkish online payments company and potential Stripe competitor, closes $15M Series C https://t.co/PuilpGyQUd by @sohear",
+        "creation_date": "2017-04-03T18:57:57Z",
+        "location": "34.0522,-118.2437",
+        "id": 848972859506663428,
+        "label":"neutral",
+        "fav_count": 127
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": ".@Automattic's Head of Design on why designing in tech is different to all other design https://t.co/aCBCUWVzh3 by… https://t.co/Wf1UlP1AWd",
+        "creation_date": "2017-04-03T18:31:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 848966088830341121,
+        "label":"neutral",
+        "fav_count": 47
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Report: Android overtakes Windows as the internet’s most used operating system https://t.co/Ad7DtgiUku https://t.co/fIQlMBPqKc",
+        "creation_date": "2017-04-03T18:15:12Z",
+        "location": "34.0522,-118.2437",
+        "id": 848962103134359552,
+        "label":"pos",
+        "fav_count": 154
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "At-home sperm health selfies are on the rise https://t.co/kACgqzeS1o by @sarahbuhr",
+        "creation_date": "2017-04-03T18:12:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 848961324184883201,
+        "label":"pos",
+        "fav_count": 36
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Google Map Maker is now dead https://t.co/lbgXjKKw1C by @sarahintampa",
+        "creation_date": "2017-04-03T17:54:55Z",
+        "location": "34.0522,-118.2437",
+        "id": 848956997374545929,
+        "label":"neutral",
+        "fav_count": 49
+    },
+    {
+        "lang": "nl",
+        "author": "TechCrunch",
+        "text": "Let’s meet in Skopje, Macedonia this week https://t.co/1wOFg8Amkg #TCmeetup",
+        "creation_date": "2017-04-03T17:50:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 848955782058188802,
+        "label":"neutral",
+        "fav_count": 19
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Public.io supports technology startups aiming to work more deeply with the UK’s public services https://t.co/GsDwQUkFDE",
+        "creation_date": "2017-04-03T17:18:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 848947718416457728,
+        "label":"pos",
+        "fav_count": 36
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Google launches new certification program for mobile site developers https://t.co/iJPqCKX78v by @fredericl",
+        "creation_date": "2017-04-03T17:00:25Z",
+        "location": "34.0522,-118.2437",
+        "id": 848943279727050752,
+        "label":"neutral",
+        "fav_count": 119
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "The Pittsburgh Micro-Meetup is go! https://t.co/7DWbuoWgM4 by @johnbiggs",
+        "creation_date": "2017-04-03T16:58:20Z",
+        "location": "34.0522,-118.2437",
+        "id": 848942757825662977,
+        "label":"neutral",
+        "fav_count": 26
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Netflix brings offline viewing to Windows 10 PCs and tablets https://t.co/snrEBYc7FC by @sarahintampa",
+        "creation_date": "2017-04-03T16:49:58Z",
+        "location": "34.0522,-118.2437",
+        "id": 848940652415135744,
+        "label":"neutral",
+        "fav_count": 78
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Update: The deal is a mix of cash and equity. It is potentially worth $80M-$100M in total https://t.co/RJUrD9F29w",
+        "creation_date": "2017-04-03T16:28:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 848935145579171840,
+        "label":"neutral",
+        "fav_count": 49
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Founders Factory invests in its first two A․I․ startups — Iris․ai and illumr https://t.co/QQve4sAdY6 by @mikebutcher",
+        "creation_date": "2017-04-03T16:26:10Z",
+        "location": "34.0522,-118.2437",
+        "id": 848934661191585796,
+        "fav_count": 47
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Misen, the Internet-only knife brand, gets to paring https://t.co/NoAJupf6Cc https://t.co/ZOx2kuIxTk",
+        "creation_date": "2017-04-03T16:19:02Z",
+        "location": "34.0522,-118.2437",
+        "id": 848932868156002305,
+        "label":"neutral",
+        "fav_count": 35
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "What to expect at TC Sessions: Justice, our diversity and inclusion in tech event https://t.co/mehUiJ6EHZ by @meganrosedickey",
+        "creation_date": "2017-04-03T16:17:28Z",
+        "location": "34.0522,-118.2437",
+        "id": 848932473937506305,
+        "label":"neutral",
+        "fav_count": 12
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Twitter adds location sharing for business offering customer support over Direct Messages https://t.co/M74M8kfKoK by @sarahintampa",
+        "creation_date": "2017-04-03T16:00:31Z",
+        "location": "34.0522,-118.2437",
+        "id": 848928206069563392,
+        "label":"neutral",
+        "fav_count": 48
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Apple is developing its own graphics chips for future iPhones https://t.co/U67o0YNG7l https://t.co/LNFzkWSLc8",
+        "creation_date": "2017-04-03T15:54:16Z",
+        "location": "34.0522,-118.2437",
+        "id": 848926634916884480,
+        "label":"neutral",
+        "fav_count": 92
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Ford tops the list of automated driving leaders in new study https://t.co/WUBxTe8bdC by @etherington https://t.co/nJbbdkf2jS",
+        "creation_date": "2017-04-03T15:30:59Z",
+        "location": "34.0522,-118.2437",
+        "id": 848920772936683524,
+        "label":"pos",
+        "fav_count": 49
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Automattic's head of design on diversity, the three kinds of design and the four quarters of ... https://t.co/CHCqFuRtF9 by @ghoshal @erondu",
+        "creation_date": "2017-04-03T15:00:51Z",
+        "location": "34.0522,-118.2437",
+        "id": 848913190280986624,
+        "label":"neutral",
+        "fav_count": 35
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "According to the stock market, Tesla is now worth more than Ford https://t.co/cB57UnG17J by @mjburnsy https://t.co/oikvz84Ee6",
+        "creation_date": "2017-04-03T14:42:48Z",
+        "location": "34.0522,-118.2437",
+        "id": 848908648915116033,
+        "label":"pos",
+        "fav_count": 213
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Amazon launches Amazon Cash, a way to shop its site without a bank card https://t.co/dUv0okccLc by @sarahintampa",
+        "creation_date": "2017-04-03T14:27:50Z",
+        "location": "34.0522,-118.2437",
+        "id": 848904884095262721,
+        "label":"neutral",
+        "fav_count": 116
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Boeing and ULA demo their Emergency Egress System for crewed space launches https://t.co/1ZyWn8GweA by @etherington https://t.co/bO9KOzPQXa",
+        "creation_date": "2017-04-03T14:08:44Z",
+        "location": "34.0522,-118.2437",
+        "id": 848900077254877184,
+        "label":"neutral",
+        "fav_count": 23
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Product Hunt will now let you ask the community for product recommendations https://t.co/gX2kPNeLCw by @fitztepper",
+        "creation_date": "2017-04-03T14:06:52Z",
+        "location": "34.0522,-118.2437",
+        "id": 848899605110681600,
+        "label":"neutral",
+        "fav_count": 68
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "HTC launching its VR app subscription service at $7 per month https://t.co/vhn4oJztuA by @lucas_matney",
+        "creation_date": "2017-04-03T13:00:49Z",
+        "location": "34.0522,-118.2437",
+        "id": 848882984455294976,
+        "label":"neutral",
+        "fav_count": 50
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "How marine biology inspired Soft Robotics’ industrial grippers https://t.co/BlnVTvBgc5 https://t.co/jXiMtAivQZ",
+        "creation_date": "2017-04-03T12:23:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 848873494167334912,
+        "label":"pos",
+        "fav_count": 65
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "A look back on the golden age of Atari gaming https://t.co/uVoOUqooR0 by @jlendino",
+        "creation_date": "2017-04-03T12:00:14Z",
+        "location": "34.0522,-118.2437",
+        "id": 848867738303033344,
+        "label":"pos",
+        "fav_count": 51
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Report: Android overtakes Windows as the internet's most used operating system https://t.co/ISqNLeG8Gv by @jonrussell",
+        "creation_date": "2017-04-03T11:35:09Z",
+        "location": "34.0522,-118.2437",
+        "id": 848861423455223810,
+        "label":"pos",
+        "fav_count": 194
+    },
+    {
+        "lang": "nl",
+        "author": "TechCrunch",
+        "text": "Let's meet in Skopje, Macedonia this week https://t.co/JGYMBdmNJS by @johnbiggs",
+        "creation_date": "2017-04-03T11:15:12Z",
+        "location": "34.0522,-118.2437",
+        "id": 848856405687676928,
+        "label":"neutral",
+        "fav_count": 24
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "TV streaming app Molotov now has 1 million users https://t.co/UszhDuP3bJ by @romaindillet https://t.co/U3BbGh30Wb",
+        "creation_date": "2017-04-03T10:29:25Z",
+        "location": "34.0522,-118.2437",
+        "id": 848844881304989698,
+        "label":"neutral",
+        "fav_count": 55
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Former No․ 10 aide Daniel Korski launches venture to link startups with public services https://t.co/w7zLU3F5Xw by @mikebutcher",
+        "creation_date": "2017-04-03T09:41:12Z",
+        "location": "34.0522,-118.2437",
+        "id": 848832750606057472,
+        "label":"neutral",
+        "fav_count": 77
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Apple is developing its own graphics chips for future iPhones https://t.co/aElHRKlRE8 by @jonrussell",
+        "creation_date": "2017-04-03T08:24:28Z",
+        "location": "34.0522,-118.2437",
+        "id": 848813438155411457,
+        "label":"neutral",
+        "fav_count": 97
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Twitter's head of Asia Pacific is leaving the company after 4.5 years https://t.co/WqpspZpPKE by @jonrussell",
+        "creation_date": "2017-04-03T07:54:46Z",
+        "location": "34.0522,-118.2437",
+        "id": 848805964870410241,
+        "label":"neg",
+        "fav_count": 48
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Doug cuts the cord and saves $100 a month on cable https://t.co/d8uspP3egM https://t.co/wZe3bvSPZU",
+        "creation_date": "2017-04-03T06:47:15Z",
+        "location": "34.0522,-118.2437",
+        "id": 848788974634024960,
+        "label":"neg",
+        "fav_count": 115
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "What it would take for Blue Apron to go public in 2017 https://t.co/lLWruO71LY https://t.co/OQzIdK0VW5",
+        "creation_date": "2017-04-03T05:35:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 848770816003244033,
+        "label":"neutral",
+        "fav_count": 54
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "This guy built a homemade Iron Man suit with mini jet engines tied to his limbs https://t.co/NWcH6MG1wD https://t.co/cypjBLUPDV",
+        "creation_date": "2017-04-03T05:15:49Z",
+        "location": "34.0522,-118.2437",
+        "id": 848765961083641856,
+        "label":"neutral",
+        "fav_count": 895
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Grab makes first major acquisition with deal to buy Indonesian fintech startup Kudo https://t.co/mAVFQd1wwt by @jonrussell",
+        "creation_date": "2017-04-03T04:06:14Z",
+        "location": "34.0522,-118.2437",
+        "id": 848748450782912513,
+        "label":"neutral",
+        "fav_count": 89
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "New Clerky tools help startups hire and raise funds without running into legal problems https://t.co/eDMSvsifm0",
+        "creation_date": "2017-04-03T03:41:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 848742124703162368,
+        "label":"neutral",
+        "fav_count": 122
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Windows has a heart of trash https://t.co/VPxmsnIgZR https://t.co/HljGJu5114",
+        "creation_date": "2017-04-03T03:33:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 848740106370416641,
+        "label":"neg",
+        "fav_count": 89
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Can Dubai achieve a happiness revolution without addressing its labor issues? https://t.co/fuYlgZokJ3 by @MelissaRowley",
+        "creation_date": "2017-04-03T03:30:50Z",
+        "location": "34.0522,-118.2437",
+        "id": 848739541733310465,
+        "label":"neutral",
+        "fav_count": 43
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Misen, the Internet-only knife brand, gets to paring https://t.co/R8gUDs9MPb by @johnbiggs",
+        "creation_date": "2017-04-03T02:05:17Z",
+        "location": "34.0522,-118.2437",
+        "id": 848718012639326209,
+        "label":"neutral",
+        "fav_count": 43
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Commission your own traffic and construction studies without ever leaving bed using SpaceKnow https://t.co/mbIqjzy92a",
+        "creation_date": "2017-04-03T01:41:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 848711932425252864,
+        "label":"neutral",
+        "fav_count": 50
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Why do developers who could work anywhere flock to the world’s most expensive cities? https://t.co/idM1OpX5zf",
+        "creation_date": "2017-04-03T00:41:34Z",
+        "location": "34.0522,-118.2437",
+        "id": 848696945510109184,
+        "label":"neutral",
+        "fav_count": 76
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "The defining characteristic of Samsung’s new Galaxy S8 and S8+ is the display https://t.co/Efm53Lfsg8 https://t.co/WtTBi0MN2N",
+        "creation_date": "2017-04-02T23:30:49Z",
+        "location": "34.0522,-118.2437",
+        "id": 848679142576996352,
+        "label":"neutral",
+        "fav_count": 97
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "RT @sohear: Mike Arrington called me a \"veteran\" writer in 2007 ( https://t.co/L3LGW2FU6P ) and @JamesLiamCook did today. I must be really…",
+        "creation_date": "2017-04-02T23:04:02Z",
+        "location": "34.0522,-118.2437",
+        "id": 848672399457374208,
+        "label":"neutral",
+        "fav_count": 0
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "The post office will now email you photos of your mail before it’s delivered https://t.co/BQqDnreT1D",
+        "creation_date": "2017-04-02T22:48:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 848668386473234432,
+        "label":"neutral",
+        "fav_count": 126
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "New Clerky tools help startups hire and raise funds without running into l... https://t.co/bnI26IjoMg by… https://t.co/B9LrhpSN5L",
+        "creation_date": "2017-04-02T22:29:43Z",
+        "location": "34.0522,-118.2437",
+        "id": 848663765746765825,
+        "label":"pos",
+        "fav_count": 55
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "AdSemble launches a self-serve platform for buying digital billboard ads https://t.co/hmqa9rTxhJ by @anthonyha",
+        "creation_date": "2017-04-02T20:50:30Z",
+        "location": "34.0522,-118.2437",
+        "id": 848638796845502464,
+        "label":"neutral",
+        "fav_count": 62
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Your next smartphone is not going to be a revolution https://t.co/SKYumrpbVh https://t.co/8niDpsj7NL",
+        "creation_date": "2017-04-02T20:32:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 848634169194401793,
+        "label":"neg",
+        "fav_count": 91
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Zozi’s ousted CEO sues board following last week’s layoffs https://t.co/psUObgKGxB",
+        "creation_date": "2017-04-02T20:05:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 848627359368577025,
+        "label":"neg",
+        "fav_count": 36
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "RydenGo gets ready to take on Lyft and Uber with a brand new ride hailing model https://t.co/hvT1WrdUcE https://t.co/aGkm81fjSs",
+        "creation_date": "2017-04-02T18:32:08Z",
+        "location": "34.0522,-118.2437",
+        "id": 848603973061890053,
+        "label":"neutral",
+        "fav_count": 116
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Booze investors favor apps, gadgets and biotech https://t.co/Dpa1yeoEh8",
+        "creation_date": "2017-04-02T17:01:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 848581058232815616,
+        "label":"neutral",
+        "fav_count": 60
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Commission your own traffic and construction studies without ever leaving bed using SpaceKnow https://t.co/I4no8FJpeq by @JohnMannes",
+        "creation_date": "2017-04-02T17:00:37Z",
+        "location": "34.0522,-118.2437",
+        "id": 848580942251802624,
+        "label":"neutral",
+        "fav_count": 41
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Everything you need to know about Congress’ decision to expose your data to internet providers https://t.co/VoA4MLPPOT",
+        "creation_date": "2017-04-02T16:46:46Z",
+        "location": "34.0522,-118.2437",
+        "id": 848577456277606400,
+        "label":"neutral",
+        "fav_count": 106
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Search makes Snapchat endless https://t.co/9zxyh9Qh2w",
+        "creation_date": "2017-04-02T16:15:09Z",
+        "location": "34.0522,-118.2437",
+        "id": 848569501306302465,
+        "label":"neutral",
+        "fav_count": 87
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Facebook will launch group chatbots at F8 https://t.co/EA9Zd7UUr4 https://t.co/L8y8WCjES7",
+        "creation_date": "2017-04-02T14:31:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 848543315029086208,
+        "label":"neutral",
+        "fav_count": 77
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Why do developers who could work anywhere flock to the world's most expensive cities? https://t.co/hiI1JSa5wd by @rezendi",
+        "creation_date": "2017-04-02T13:03:16Z",
+        "location": "34.0522,-118.2437",
+        "id": 848521211592286208,
+        "label":"neutral",
+        "fav_count": 97
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Women tech founders face an uphill battle getting in front of VCs and raising money https://t.co/0t84GlIEnf",
+        "creation_date": "2017-04-02T12:13:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 848508574716375040,
+        "label":"neutral",
+        "fav_count": 120
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "2017 could truly be the year of the enterprise tech IPO https://t.co/mMgCsW6X0F https://t.co/sdTXZPBi2O",
+        "creation_date": "2017-04-02T11:30:10Z",
+        "location": "34.0522,-118.2437",
+        "id": 848497783107661827,
+        "label":"neutral",
+        "fav_count": 71
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Cloudera finally ready for the public stage https://t.co/jHfduWE6UT",
+        "creation_date": "2017-04-02T05:56:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 848413711178006528,
+        "label":"neutral",
+        "fav_count": 51
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Facebook pivots into Stories https://t.co/qezrPmibOs https://t.co/wA1ZZOzESv",
+        "creation_date": "2017-04-02T04:25:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 848390798479691776,
+        "label":"neutral",
+        "fav_count": 69
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Snapchat wins April Fools’ with its jab at Instagram https://t.co/8l4w7m9jY7",
+        "creation_date": "2017-04-02T03:31:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 848377225657425920,
+        "label":"neutral",
+        "fav_count": 199
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Tinder Online is a new web version of the dating app https://t.co/uEzMB4ZUxA",
+        "creation_date": "2017-04-02T02:50:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 848366893157240834,
+        "label":"neutral",
+        "fav_count": 65
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Owlet updates its smart baby health monitoring sock so babies can’t kick it off https://t.co/uquES91OlK https://t.co/y6mBKkHhzC",
+        "creation_date": "2017-04-02T01:20:32Z",
+        "location": "34.0522,-118.2437",
+        "id": 848344363121823744,
+        "label":"neutral",
+        "fav_count": 84
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Lyft Shuttle is an experimental new Lyft Line feature that works like a bus route https://t.co/bqhwnDjkAO https://t.co/YN3zCOW1TI",
+        "creation_date": "2017-04-02T00:29:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 848331407026008065,
+        "label":"neutral",
+        "fav_count": 110
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Here are the frontier startups that presented at Singularity University’s third demo day https://t.co/df28gfXjJ6",
+        "creation_date": "2017-04-01T23:05:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 848310273702318080,
+        "label":"neutral",
+        "fav_count": 44
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Is technology contributing to increased inequality? https://t.co/G8wEAJcZLv https://t.co/vzxrCBE6JD",
+        "creation_date": "2017-04-01T22:33:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 848302227483754496,
+        "label":"neutral",
+        "fav_count": 80
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "April Fools’ 2017: Here’s the best and worst of this year’s pranks (so far) https://t.co/iRZF23LSCO",
+        "creation_date": "2017-04-01T22:03:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 848294670123884544,
+        "label":"neutral",
+        "fav_count": 75
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "The TC Trivia Throwdown is next week in NYC! https://t.co/YkUxJ9gGYy",
+        "creation_date": "2017-04-01T21:43:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 848289642801713152,
+        "label":"neutral",
+        "fav_count": 22
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Zozi's ousted CEO sues board following last week's layoffs https://t.co/woCLvRIK54 by @sarahintampa",
+        "creation_date": "2017-04-01T21:38:24Z",
+        "location": "34.0522,-118.2437",
+        "id": 848288461429784576,
+        "label":"neg",
+        "fav_count": 29
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "If it talks like a government and acts like a government, it must be a tech giant https://t.co/Crc2VlTpcl",
+        "creation_date": "2017-04-01T21:33:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 848287124780699648,
+        "label":"neutral",
+        "fav_count": 50
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Discussing the limits of artificial intelligence https://t.co/qEFpaMNdL6 by @AMLG23",
+        "creation_date": "2017-04-01T21:29:41Z",
+        "location": "34.0522,-118.2437",
+        "id": 848286268907716610,
+        "label":"neg",
+        "fav_count": 115
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Job satisfaction survey says tech, while bad, is better than other industries for women https://t.co/Cw75rQDGq0 https://t.co/vVTrY2KX5o",
+        "creation_date": "2017-04-01T21:08:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 848280822448828416,
+        "label":"pos",
+        "fav_count": 54
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Let's meet in Pittsburgh on April 11 https://t.co/8DqnscSno1 by @johnbiggs",
+        "creation_date": "2017-04-01T19:47:37Z",
+        "location": "34.0522,-118.2437",
+        "id": 848260580947439616,
+        "label":"neutral",
+        "fav_count": 27
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Snapchat wins April Fools' with its jab at Instagram https://t.co/MJ3S0XCjT0 by @grg",
+        "creation_date": "2017-04-01T19:15:44Z",
+        "location": "34.0522,-118.2437",
+        "id": 848252557487099904,
+        "label":"neutral",
+        "fav_count": 94
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Slap an epic score on your video with Moodelizer https://t.co/c1mfct8DK5",
+        "creation_date": "2017-04-01T19:14:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 848252142502760451,
+        "label":"neutral",
+        "fav_count": 67
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Scientists use magnetic fields to remotely control biologically inspired soft robots https://t.co/CRMiWHlCKy https://t.co/PbydBEk4nX",
+        "creation_date": "2017-04-01T18:56:02Z",
+        "location": "34.0522,-118.2437",
+        "id": 848247603284373504,
+        "label":"neutral",
+        "fav_count": 98
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "RT @titoyooo: Monday is going to be a fun day! I got @Redfoo coming on Crunch Report to hangout. All Tech, All Music, All Hair. 4/3 on @Tec…",
+        "creation_date": "2017-04-01T18:30:13Z",
+        "location": "34.0522,-118.2437",
+        "id": 848241103992229891,
+        "label":"neutral",
+        "fav_count": 0
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Facebook tests a second News Feed headed by a rocket ship icon 🚀 https://t.co/SCWIUsY534",
+        "creation_date": "2017-04-01T18:09:28Z",
+        "location": "34.0522,-118.2437",
+        "id": 848235881513209856,
+        "label":"neutral",
+        "fav_count": 50
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Robinhood stock trading app valued at $1.3 billion with big raise from DST https://t.co/JboXBy7mbj",
+        "creation_date": "2017-04-01T18:06:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 848235038806351872,
+        "label":"neutral",
+        "fav_count": 108
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Apple forecasted to lose its lead over Android in app store revenue https://t.co/l1QKXuMAJm https://t.co/AxVor4murd",
+        "creation_date": "2017-04-01T17:47:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 848230243718615045,
+        "label":"neg",
+        "fav_count": 83
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Gillmor Gang: Blank Check https://t.co/V4D01qLxAQ by @stevegillmor",
+        "creation_date": "2017-04-01T17:00:22Z",
+        "location": "34.0522,-118.2437",
+        "id": 848218493602471936,
+        "label":"neutral",
+        "fav_count": 12
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Cloudera finally ready for the public stage https://t.co/XmW3eX8oWG by @ron_miller",
+        "creation_date": "2017-04-01T15:51:30Z",
+        "location": "34.0522,-118.2437",
+        "id": 848201160746037248,
+        "label":"neutral",
+        "fav_count": 34
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "This week we discuss the massive Dropbox debt facility, the rough situation at Munchery, Amazon, and the M&amp;A market https://t.co/p13UbKChsv",
+        "creation_date": "2017-04-01T15:28:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 848195268252246016,
+        "label":"neutral",
+        "fav_count": 32
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Krablr releases first diversity report https://t.co/L0KA4kNEzj by @riptari @romaindillet https://t.co/vupGO6fg0E",
+        "creation_date": "2017-04-01T15:19:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 848193003067985920,
+        "label":"neutral",
+        "fav_count": 24
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "How marine biology inspired Soft Robotics’ industrial grippers https://t.co/CMisJW92Cf by @bheater @lorakolodny",
+        "creation_date": "2017-04-01T15:15:52Z",
+        "location": "34.0522,-118.2437",
+        "id": 848192193546387456,
+        "label":"pos",
+        "fav_count": 42
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Cloudera posts long-awaited IPO filing https://t.co/IUMmgeEQtq",
+        "creation_date": "2017-04-01T14:50:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 848185703750135809,
+        "label":"pos",
+        "fav_count": 40
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Microsoft’s Creators Update wants to bring Windows 10 artists and gamers back into the fold https://t.co/BSGkbjSE74 https://t.co/WsYoUCDGPP",
+        "creation_date": "2017-04-01T14:31:59Z",
+        "location": "34.0522,-118.2437",
+        "id": 848181152024117248,
+        "label":"neutral",
+        "fav_count": 68
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "On-demand dog walking startup Wag quietly raised funding from General Catalyst and Sherpa Ventures… https://t.co/zEa12GnPiJ",
+        "creation_date": "2017-04-01T14:13:04Z",
+        "location": "34.0522,-118.2437",
+        "id": 848176392231673859,
+        "label":"neutral",
+        "fav_count": 80
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "9 of the biggest stories this week https://t.co/VFYeeT8Wun",
+        "creation_date": "2017-04-01T13:50:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 848170606847827969,
+        "label":"neutral",
+        "fav_count": 63
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "April Fools’ 2017: Here’s the best and worst of this year’s pranks https://t.co/nij6P9KuIa",
+        "creation_date": "2017-04-01T13:09:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 848160278852378625,
+        "label":"neutral",
+        "fav_count": 83
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Stealthy gaming company Wonder is ready to tease its new mystery hardware https://t.co/euhoILj2cF",
+        "creation_date": "2017-04-01T12:46:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 848154501437693952,
+        "label":"neutral",
+        "fav_count": 26
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Amazon quietly launches its own social media influencer program into beta https://t.co/b6A1mP7SpZ",
+        "creation_date": "2017-04-01T11:21:05Z",
+        "location": "34.0522,-118.2437",
+        "id": 848133110575267840,
+        "label":"neutral",
+        "fav_count": 179
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Starbucks is going to try out a mobile order-only store https://t.co/LGlCjlTl4X https://t.co/KpBGayTs1W",
+        "creation_date": "2017-04-01T10:17:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 848116995375722496,
+        "label":"neutral",
+        "fav_count": 134
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "SpaceX​ successfully relaunches a rocket, Cloudera's IPO and more on #CrunchReport with @titoyooo https://t.co/x8YGCCdwKk",
+        "creation_date": "2017-04-01T10:02:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 848113232493424640,
+        "label":"pos",
+        "fav_count": 67
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Snapchat has opened up search across over 1 million curated public Stories https://t.co/E3yBFBmAPe",
+        "creation_date": "2017-04-01T09:15:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 848101404287918080,
+        "label":"neutral",
+        "fav_count": 80
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "Google is fighting with Symantec over encrypting the internet https://t.co/MbjWOzhTsw",
+        "creation_date": "2017-04-01T08:09:07Z",
+        "location": "34.0522,-118.2437",
+        "id": 848084800590184448,
+        "label":"neutral",
+        "fav_count": 105
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "GV’s Tom Hulme on AI, life sciences, and Alphabet VC’s future in Europe https://t.co/ayJ9A69fix",
+        "creation_date": "2017-04-01T07:53:03Z",
+        "location": "34.0522,-118.2437",
+        "id": 848080758174515200,
+        "label":"neutral",
+        "fav_count": 38
+    },
+    {
+        "lang": "en",
+        "author": "TechCrunch",
+        "text": "SpaceX’s first Falcon Heavy launch could attempt upper stage recovery https://t.co/99MCQALmR3 https://t.co/TtFRI5D3G2",
+        "creation_date": "2017-04-01T06:10:06Z",
+        "location": "34.0522,-118.2437",
+        "id": 848054848658579456,
+        "label":"neutral",
+        "fav_count": 159
+    }
+]

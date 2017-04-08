@@ -8,7 +8,7 @@ page = 1
 t_count = 0
 geo_tweets_list = []
 while True:
-    tweets = api.user_timeline("e27co", count=200, page=page)
+    tweets = api.user_timeline("@timesofindia", count=200, page=page)
     if len(tweets) == 0:
         break
     t_count = t_count + len(tweets)
