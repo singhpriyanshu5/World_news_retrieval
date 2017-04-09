@@ -68,19 +68,11 @@ def linear_svc():
     fitted_vectorizer = vectorizer.fit(tweet_list)
     vectorized_tweet_list = fitted_vectorizer.transform(tweet_list)
 
-    # pca = PCA(n_components=2).fit(vectorized_tweet_list.todense())
-    # data2D = pca.transform(vectorized_tweet_list.todense())
-    # plt.scatter(data2D[:,0], data2D[:,1], c='red')
-    # plt.show()
-
     train_vector, test_vector, train_labels, test_labels = train_test_split(vectorized_tweet_list,
     label_list,
-    test_size=0.2,
+    test_size=0.3,
     random_state=42)
-
-    # print train_vector.todense().shape
-    # print test_vector.todense().shape
-    # print len(label_list)
+    print "Running linear_svc with training size 70%"
     plot_tfidf_vectors(train_vector.todense(), label_list)
 
 
@@ -90,9 +82,6 @@ def linear_svc():
     ovr_classifier = OneVsRestClassifier(model).fit(train_vector, train_labels)
     prediction = ovr_classifier.predict(test_vector)
 
-    # ovr_classifier = OneVsRestClassifier(model).fit(data_train, train_labels)
-    # prediction = ovr_classifier.predict(data_test)
-    # prediction = ovr_classifier.predict(train_vector)
 
     confusion_matrix = {}
     predicted_positive = {'actual_positive':0, 'actual_negative':0, 'actual_neutral':0}
@@ -141,19 +130,11 @@ def linear_svc():
     save_model(fitted_vectorizer, 'vectorizer_tfidf')
 
     # evaluation
-    # label_score = ovr_classifier.decision_function(test_vector)
     label_score = ovr_classifier.decision_function(test_vector)
     binarized_prediction = label_binarize(prediction, classes=class_list)
     binarized_labels = label_binarize(test_labels, classes=class_list)
     evaluate(binarized_prediction, binarized_labels, label_score, 'linearsvc_tfidf')
 
-    # train_score = ovr_classifier.decision_function(train_vector)
-    # binarized_prediction = label_binarize(prediction, classes=class_list)
-    # binarized_labels = label_binarize(train_labels, classes=class_list)
-    # evaluate(binarized_prediction, binarized_labels, train_score, 'linearsvc_tfidf_train')
-
-
-    # generate_eval_metrics(binarized_prediction, 'linsvc_tfidf', binarized_labels)
 
 if __name__ == "__main__":
     linear_svc()

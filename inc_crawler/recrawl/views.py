@@ -38,11 +38,14 @@ def update_solr():
 
 def main_recrawl(handles_lst):
     # crawl data
-    p = Pool(processes=5)
-    for handle in handles_lst:
-        res = p.apply_async(crawl_incremental_data, args=(handle,))
-    p.close()
-    p.join()
+    # p = Pool(processes=5)
+    # for handle in handles_lst:
+    #     res = p.apply_async(crawl_incremental_data, args=(handle,))
+    # p.close()
+    # p.join()
+
+    ##For crawling synchronously
+    crawl_incremental_data(handles_lst)
     print "crawling finished"
 
     preprocessing_data.preprocess(handles_lst)

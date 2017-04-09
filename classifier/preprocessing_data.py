@@ -189,13 +189,6 @@ def preprocess(handles):
         with open('tweets_data/' + filename + '_preprocessed.json', 'w') as tf:
             json.dump(tweets, tf)
 
-    # store a list of the labels in a csv file
-    # label_list = []
-    # with open('tweets_data/' + handles_lst[0] + '.json') as json_file:
-    #     tweets = json.load(json_file)
-    #     for tweet in tweets:
-    #         label_list.append(tweet['label'])
-    #         save_as_csv('tweets_data/sentiment_labels_list.csv', label_list)
 
 
 if __name__ == '__main__':

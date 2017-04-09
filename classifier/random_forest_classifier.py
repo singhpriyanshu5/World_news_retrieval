@@ -71,6 +71,8 @@ def random_forest_classify():
     result = random_forest_classifier.fit(train_vector, train_labels)
     prediction = result.predict(test_vector)
 
+    
+
     print_confusion_matrix(prediction, test_labels)
 
     create_directory('data')

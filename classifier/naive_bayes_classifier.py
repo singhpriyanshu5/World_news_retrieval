@@ -37,12 +37,13 @@ def nb_classifier():
     test_size=0.2,
     random_state=42)
 
+    print "running naive bayes with training set 80%"
+
     # train model and predict
     classifier = GaussianNB()
     result = classifier.fit(train_vector.todense(), train_labels)
     prediction = result.predict(test_vector.todense())
 
-    print classifier.score(test_vector.todense(), test_labels)
 
     # output result to csv
     create_directory('data')

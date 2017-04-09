@@ -111,6 +111,8 @@ def linearsvc_w2v_classify():
     classifier = OneVsRestClassifier(model).fit(train_vector, labels_list[:index_value])
     prediction = classifier.predict(test_vector)
 
+    print "running linear svc with word2vec representation on 80%"+"training set"
+
     create_directory('data')
     prediction.tofile("data/linearsvc_w2v.csv", sep=',')
     save_as_csv("data/linearsvc_w2v_test_labels.csv", labels_list[index_value:])
