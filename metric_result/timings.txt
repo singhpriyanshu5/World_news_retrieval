@@ -1,5 +1,0 @@
-Number of records in dataset: 3227
-Linear SVC dataset time: 0.000855441093445
-Linear SVC datapoint time: 2.65088656165e-07
-Random Forest dataset time: 0.146540071964
-Random Forest datapoint time: 0.00146540071964
