@@ -75,7 +75,7 @@ def linear_svc():
 
     train_vector, test_vector, train_labels, test_labels = train_test_split(vectorized_tweet_list,
     label_list,
-    test_size=0.3,
+    test_size=0.2,
     random_state=42)
 
     # print train_vector.todense().shape

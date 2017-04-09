@@ -6,7 +6,7 @@ sys.path.append(os.path.abspath(settings.FILES_DIR))
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from multiprocessing import Pool
-from classifier import classify_main, utility
+from classifier import classify_main, utility, preprocessing_data
 import json
 from crawler import news_crawler
 import socket
@@ -44,6 +44,9 @@ def main_recrawl(handles_lst):
     p.close()
     p.join()
     print "crawling finished"
+
+    preprocessing_data.preprocess(handles_lst)
+    print "preprocessing of the crawled data finished"
 
     # classify data
     classify_main.classify_main()

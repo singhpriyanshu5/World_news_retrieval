@@ -120,12 +120,13 @@ def preprocess_individual(filename):
 
 def preprocess(handles):
     # open file
-    sentiment_handle = handles[0]
-    handles.insert(0,sentiment_handle+'_sentiments')
+    # sentiment_handle = handles[0]
+    # handles.insert(0,sentiment_handle+'_sentiments')
     for handle_index,handle in enumerate(handles):
 
         tweet_text_lst = []
-        filename = handle if handle_index == 0 else handle+'_data'
+        filename = handle+'_data'
+        # filename = handle if handle_index == 0 else handle+'_data'
         with open('tweets_data/' + filename + '.json') as json_file:
             tweets = json.load(json_file)
         # load the text of the tweet to a list
@@ -185,22 +186,18 @@ def preprocess(handles):
             tweets_list[i] = preprocessed_tweet
             tweets[i]['ptext'] = preprocessed_tweet
 
-
-        if handle_index == 0:
-            save_as_csv('tweets_data/'+filename+'_preprocessed.csv', tweets_list)
-        else:
-            with open('tweets_data/' + filename + '_preprocessed.json', 'w') as tf:
-                json.dump(tweets, tf)
+        with open('tweets_data/' + filename + '_preprocessed.json', 'w') as tf:
+            json.dump(tweets, tf)
 
     # store a list of the labels in a csv file
-    label_list = []
-    with open('tweets_data/' + handles_lst[0] + '.json') as json_file:
-        tweets = json.load(json_file)
-        for tweet in tweets:
-            label_list.append(tweet['label'])
-            save_as_csv('tweets_data/sentiment_labels_list.csv', label_list)
+    # label_list = []
+    # with open('tweets_data/' + handles_lst[0] + '.json') as json_file:
+    #     tweets = json.load(json_file)
+    #     for tweet in tweets:
+    #         label_list.append(tweet['label'])
+    #         save_as_csv('tweets_data/sentiment_labels_list.csv', label_list)
 
 
 if __name__ == '__main__':
     preprocess_individual('mixed_train_sentiments')
-    # preprocess(handles_lst)
+    preprocess(handles_lst)
