@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "A simple user interface that use Solr server to retrieve sport news.",
+  "description": "A simple user interface that use Solr server to retrieve world wide news.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

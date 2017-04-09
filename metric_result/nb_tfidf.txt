@@ -1,10 +1,10 @@
-Accuracy: 0.552285050349
-Precision(Macro): 0.541104625497
-Recall(Macro): 0.539483890477
-F1 measure(Macro): 0.539577857627
+Accuracy: 0.56
+Precision(Macro): 0.551402010001
+Recall(Macro): 0.567672270926
+F1 measure(Macro): 0.553090210112
 
-Precision(Weighted): 0.548655343275
+Precision(Weighted): 0.571895763743
 
-Precision(Micro): 0.552285050349
-Recall(Micro): 0.552285050349
-F1 measure(Micro): 0.552285050349
+Precision(Micro): 0.56
+Recall(Micro): 0.56
+F1 measure(Micro): 0.56

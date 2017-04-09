@@ -5,21 +5,21 @@ var predictedSentiData = [];
 
 var predictedPosData = {
   name: 'Positive',
-  y: 90
+  y: 212
 };
 
 predictedSentiData.push(predictedPosData);
 
 var predictedNeuData = {
   name: 'Neutral',
-  y: 271
+  y: 622
 };
 
 predictedSentiData.push(predictedNeuData);
 
 var predictedNegData = {
   name: 'Negative',
-  y: 285
+  y: 366
 };
 
 predictedSentiData.push(predictedNegData);
@@ -62,7 +62,7 @@ var trueSentiData = [];
 var truePosData = {
   name: 'Actual Positive',
   //4 are classified as positive, 1 is classified as neural, 2 are classified as negative.
-  data: [75, 68, 28]
+  data: [161, 77, 18]
 };
 
 trueSentiData.push(truePosData);
@@ -70,7 +70,7 @@ trueSentiData.push(truePosData);
 var trueNeuData = {
   name: 'Actual Neutral',
   //1 are classified as positive, 4 is classified as neural, 2 are classified as negative.
-  data: [10, 155, 67]
+  data: [33, 444, 38]
 };
 
 trueSentiData.push(trueNeuData);
@@ -78,7 +78,7 @@ trueSentiData.push(trueNeuData);
 var trueNegData = {
   name: 'Actual Negative',
   //2 are classified as positive, 3 is classified as neural, 8 are classified as negative.
-  data: [5, 48, 190]
+  data: [18, 101, 310]
 };
 
 trueSentiData.push(trueNegData);

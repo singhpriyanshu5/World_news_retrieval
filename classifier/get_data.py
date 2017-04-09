@@ -4,18 +4,29 @@ from utility import TWEET_LIMIT, handles_lst
 
 def get_data(data_type):
     if data_type == "labels":
-        with open('tweets_data/sentiment_labels_list.csv', 'r') as labels_file:
+        with open('tweets_data/mixed_train_sentiments_labels_list.csv', 'r') as labels_file:
             reader = csv.reader(labels_file)
             labels_list = list(reader)[0]
             return labels_list
+        # with open('tweets_data/sentiment_labels_list.csv', 'r') as labels_file:
+        #     reader = csv.reader(labels_file)
+        #     labels_list = list(reader)[0]
+        #     return labels_list
     elif data_type == "tweets":
-        with open('tweets_data/'+handles_lst[0]+'_sentiments_preprocessed.csv', 'r') as labels_file:
+        with open('tweets_data/mixed_train_sentiments_preprocessed.csv', 'r') as labels_file:
             reader = csv.reader(labels_file)
             tweets_list = list(reader)[0]
             if TWEET_LIMIT != None:
                 return tweets_list[:TWEET_LIMIT]
             else:
                 return tweets_list
+        # with open('tweets_data/'+handles_lst[0]+'_sentiments_preprocessed.csv', 'r') as labels_file:
+        #     reader = csv.reader(labels_file)
+        #     tweets_list = list(reader)[0]
+        #     if TWEET_LIMIT != None:
+        #         return tweets_list[:TWEET_LIMIT]
+        #     else:
+        #         return tweets_list
 
 def train_test_split(percentage, data_set):
     # split data into training and test set

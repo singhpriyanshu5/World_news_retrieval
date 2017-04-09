@@ -5,7 +5,7 @@ from utility import handles_lst
 filenames = handles_lst
 
 def classify_main():
-    model = joblib.load('model/linearsvc_tfidf.pkl')
+    model = joblib.load('model/rf_tfidf.pkl')
     vectorizer = joblib.load('model/vectorizer_tfidf.pkl')
 
     all_tweets_json = []

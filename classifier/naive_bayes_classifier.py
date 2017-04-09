@@ -23,18 +23,18 @@ def nb_classifier():
     tweet_list = get_data("tweets")
     # vectorise using tf-idf
     vectorizer = TfidfVectorizer(min_df=1,
-    max_features=35000,
+    max_features=20000,
     strip_accents='unicode',
     analyzer='word',
     token_pattern=r'\w{1,}',
-    ngram_range=(1, 2))
+    ngram_range=(1, 3))
 
     ## do transformation into vector
     fitted_vectorizer = vectorizer.fit(tweet_list)
     vectorized_tweet_list = fitted_vectorizer.transform(tweet_list)
     train_vector, test_vector, train_labels, test_labels = train_test_split(vectorized_tweet_list,
     label_list,
-    test_size=0.4,
+    test_size=0.2,
     random_state=42)
 
     # train model and predict
